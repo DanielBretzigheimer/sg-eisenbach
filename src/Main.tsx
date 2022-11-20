@@ -8,6 +8,15 @@ import { Home } from "./pages/home/Home"
 import { DataProtection } from "./pages/imprint/DataProtection"
 import { Imprint } from "./pages/imprint/Imprint"
 import { ShootingRanges } from "./pages/shooting-ranges/ShootingRanges"
+import { AirPistolOne } from "./pages/teams/air-pistol/AirPistolOne"
+import { AirRifleFour } from "./pages/teams/air-rifle/AirRifleFour"
+import { AirRifleOne } from "./pages/teams/air-rifle/AirRifleOne"
+import { AirRifleThree } from "./pages/teams/air-rifle/AirRifleThree"
+import { AirRifleTwo } from "./pages/teams/air-rifle/AirRifleTwo"
+import { BowOne } from "./pages/teams/bow/BowOne"
+import { SportPistolOne } from "./pages/teams/sport-pistol/SportPistolOne"
+import { SportPistolThree } from "./pages/teams/sport-pistol/SportPistolThree"
+import { SportPistolTwo } from "./pages/teams/sport-pistol/SportPistolTwo"
 import { Teams } from "./pages/teams/Teams"
 import { Youth } from "./pages/youth/Youth"
 import { RoutePath } from "./RoutePath"
@@ -23,6 +32,39 @@ export function Main() {
           <Route path={`/${RoutePath.Youth}`} component={Youth} />
           <Route path={`/${RoutePath.Events}`} component={Events} />
           <Route path={`/${RoutePath.Teams}`} component={Teams} />
+          <Route
+            path={`/${RoutePath.Teams}/luftgewehr-1`}
+            component={AirRifleOne}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/luftgewehr-2`}
+            component={AirRifleTwo}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/luftgewehr-3`}
+            component={AirRifleThree}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/luftgewehr-4`}
+            component={AirRifleFour}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/luftpistole-1`}
+            component={AirPistolOne}
+          />
+          <Route path={`/${RoutePath.Teams}/bogen-1`} component={BowOne} />
+          <Route
+            path={`/${RoutePath.Teams}/sportpistole-1`}
+            component={SportPistolOne}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/sportpistole-2`}
+            component={SportPistolTwo}
+          />
+          <Route
+            path={`/${RoutePath.Teams}/sportpistole-3`}
+            component={SportPistolThree}
+          />
           <Route
             path={`/${RoutePath.ShootingRanges}`}
             component={ShootingRanges}

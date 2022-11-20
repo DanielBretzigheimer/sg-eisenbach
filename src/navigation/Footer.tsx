@@ -1,4 +1,5 @@
 import { useNavigate } from "@solidjs/router"
+import { Stack } from "@suid/material"
 import Box from "@suid/material/Box"
 import Link from "@suid/material/Link"
 import Typography from "@suid/material/Typography"
@@ -9,9 +10,9 @@ export function Footer() {
 
   return (
     <Box sx={{ display: "flex", gap: 2 }}>
-      <Typography sx={{ flexGrow: 1 }}>
-        © 2020 Schützengesellschaft Eisenbach 1958 e.V.
-      </Typography>
+      <Stack flexGrow={1}>
+        <Typography variant="caption">© 2020 SG Eisenbach 1958 e.V.</Typography>
+      </Stack>
       <Link onClick={() => navigate(`/${RoutePath.Imprint}`)}>Impressum</Link>
       <Link onClick={() => navigate(`/${RoutePath.DataProtection}`)}>
         Datenschutz
