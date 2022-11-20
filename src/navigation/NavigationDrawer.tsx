@@ -55,6 +55,11 @@ export default function NavigationDrawer(props: NavigationDrawerProps) {
     },
   ]
 
+  function goTo(target: NavigationTarget) {
+    navigate(`/${target.route}`)
+    props.onClose()
+  }
+
   return (
     <>
       <Drawer variant="temporary" open={props.open} onClose={props.onClose}>
@@ -68,7 +73,7 @@ export default function NavigationDrawer(props: NavigationDrawerProps) {
           {navigationTargets.map((target) => (
             <>
               <ListItemButton
-                onClick={() => navigate(`/${target.route}`)}
+                onClick={() => goTo(target)}
                 selected={location.pathname === `/${target.route}`}
               >
                 {target.label}

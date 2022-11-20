@@ -3,7 +3,7 @@ import CraneIcon from "@suid/icons-material/Build"
 
 export function WorkInProgress() {
   return (
-    <>
+    <p>
       <Stack direction="row" gap={2} alignItems="center">
         <CraneIcon fontSize="large" />
         <Typography>
@@ -11,6 +11,6 @@ export function WorkInProgress() {
           zur Verfügung. Besuchen Sie uns gerne in ein paar Wochen nochmal.
         </Typography>
       </Stack>
-    </>
+    </p>
   )
 }
