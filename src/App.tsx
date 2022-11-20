@@ -1,34 +1,45 @@
-import { createTheme, ThemeProvider } from "@suid/material"
+import { createTheme, Theme, ThemeProvider } from "@suid/material"
 import { blue, pink } from "@suid/material/colors"
 import CssBaseline from "@suid/material/CssBaseline"
 import useMediaQuery from "@suid/material/useMediaQuery"
-import { Home } from "./pages/home/Home"
-import { DataProtection } from "./pages/imprint/DataProtection"
-import { Imprint } from "./pages/imprint/Imprint"
+import { Main } from "./Main"
+import { Footer } from "./navigation/Footer"
+import { TopBar } from "./navigation/TopBar"
+import "./App.css"
+import Container from "@suid/material/Container"
+import { createEffect, createSignal } from "solid-js"
+import NavigationDrawer from "./navigation/NavigationDrawer"
 
 export default function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
-  const theme = createTheme({
-    palette: prefersDarkMode
-      ? {
-          mode: "dark",
-          primary: { main: blue[200] },
-          secondary: { main: pink[200] },
-        }
-      : {
-          mode: "light",
-          background: { default: "#f5f5f5" },
-          primary: { main: blue[500] },
-          secondary: { main: pink[500] },
-        },
+  const [navOpen, setNavOpen] = createSignal(false)
+  const [theme, setTheme] = createSignal<Theme<string>>(
+    createAppTheme(prefersDarkMode())
+  )
+
+  createEffect(() => {
+    setTheme(createAppTheme(prefersDarkMode()))
   })
 
+  function createAppTheme(isDark: boolean) {
+    return createTheme({
+      palette: {
+        mode: isDark ? "dark" : "light",
+        primary: { main: blue[isDark ? 200 : 500] },
+        secondary: { main: pink[isDark ? 200 : 500] },
+      },
+    })
+  }
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme()}>
       <CssBaseline />
-      <Home />
-      <Imprint />
-      <DataProtection />
+      <TopBar onOpenNavigation={() => setNavOpen(true)} />
+      <NavigationDrawer open={navOpen()} onClose={() => setNavOpen(false)} />
+      <Container>
+        <Main />
+        <Footer />
+      </Container>
     </ThemeProvider>
   )
 }
