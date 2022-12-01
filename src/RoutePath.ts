@@ -3,7 +3,7 @@ export enum RoutePath {
   Youth = "jugend",
   Events = "veranstaltungen",
   Teams = "mannschaften",
-  ShootingRanges = "schießstände",
+  ShootingRanges = "schießstaende",
   Club = "verein",
   Contact = "kontakt",
   Links = "links",

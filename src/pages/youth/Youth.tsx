@@ -32,7 +32,7 @@ export function Youth() {
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell>20.12.2022</TableCell>
+                <TableCell>14.01.2023</TableCell>
                 <TableCell>Jahresabschlusswanderung</TableCell>
               </TableRow>
             </TableBody>

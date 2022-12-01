@@ -22,11 +22,6 @@ export function Events() {
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableCell>Adlerschießen</TableCell>
-            <TableCell>26.11.2022</TableCell>
-            <TableCell>ab 15:00</TableCell>
-          </TableRow>
-          <TableRow>
             <TableCell>Königsfeier</TableCell>
             <TableCell>03.12.2022</TableCell>
             <TableCell>ab 18:30</TableCell>

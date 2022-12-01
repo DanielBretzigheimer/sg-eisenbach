@@ -7,6 +7,10 @@ import { Events } from "./pages/events/Events"
 import { Home } from "./pages/home/Home"
 import { DataProtection } from "./pages/imprint/DataProtection"
 import { Imprint } from "./pages/imprint/Imprint"
+import { ShootingRange10Meter } from "./pages/shooting-ranges/ShootingRange10Meter"
+import { ShootingRange25Meter } from "./pages/shooting-ranges/ShootingRange25Meter"
+import { ShootingRange50Meter } from "./pages/shooting-ranges/ShootingRange50Meter"
+import { ShootingRangeBow } from "./pages/shooting-ranges/ShootingRangeBow"
 import { ShootingRanges } from "./pages/shooting-ranges/ShootingRanges"
 import { AirPistolOne } from "./pages/teams/air-pistol/AirPistolOne"
 import { AirRifleFour } from "./pages/teams/air-rifle/AirRifleFour"
@@ -68,6 +72,22 @@ export function Main() {
           <Route
             path={`/${RoutePath.ShootingRanges}`}
             component={ShootingRanges}
+          />
+          <Route
+            path={`/${RoutePath.ShootingRanges}/10-meter`}
+            component={ShootingRange10Meter}
+          />
+          <Route
+            path={`/${RoutePath.ShootingRanges}/25-meter`}
+            component={ShootingRange25Meter}
+          />
+          <Route
+            path={`/${RoutePath.ShootingRanges}/50-meter`}
+            component={ShootingRange50Meter}
+          />
+          <Route
+            path={`/${RoutePath.ShootingRanges}/bow`}
+            component={ShootingRangeBow}
           />
           <Route path={`/${RoutePath.Club}`} component={Club} />
           <Route path={`/${RoutePath.Contact}`} component={Contact} />
