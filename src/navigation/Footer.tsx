@@ -9,7 +9,7 @@ export function Footer() {
   const navigate = useNavigate()
 
   return (
-    <Box sx={{ display: "flex", gap: 2 }}>
+    <Box gap={2} sx={{ display: "flex" }} mb={2}>
       <Stack flexGrow={1}>
         <Typography variant="caption">© 2020 SG Eisenbach 1958 e.V.</Typography>
       </Stack>
