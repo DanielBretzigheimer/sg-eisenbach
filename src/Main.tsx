@@ -2,6 +2,10 @@ import { Navigate, Route, Routes } from "@solidjs/router"
 import { Box } from "@suid/material"
 import Toolbar from "@suid/material/Toolbar"
 import { Club } from "./pages/club/Club"
+import { HistoricKings } from "./pages/club/HistoricKings"
+import { Join } from "./pages/club/Join"
+import { PrizeAndKingShooting } from "./pages/club/PrizeAndKingShooting"
+import { Timeline } from "./pages/club/Timeline"
 import Contact from "./pages/contact/Contact"
 import { Events } from "./pages/events/Events"
 import { Home } from "./pages/home/Home"
@@ -90,6 +94,16 @@ export function Main() {
             component={ShootingRangeBow}
           />
           <Route path={`/${RoutePath.Club}`} component={Club} />
+          <Route path={`/${RoutePath.Club}/join`} component={Join} />
+          <Route path={`/${RoutePath.Club}/timeline`} component={Timeline} />
+          <Route
+            path={`/${RoutePath.Club}/historic-kings`}
+            component={HistoricKings}
+          />
+          <Route
+            path={`/${RoutePath.Club}/prize-and-king-shooting`}
+            component={PrizeAndKingShooting}
+          />
           <Route path={`/${RoutePath.Contact}`} component={Contact} />
           <Route
             path={`/${RoutePath.DataProtection}`}
