@@ -1,5 +1,6 @@
 import { useNavigate } from "@solidjs/router"
 import { Grid, Link, Typography } from "@suid/material"
+import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 
 export function Home() {
@@ -15,17 +16,23 @@ export function Home() {
         zu uns aufnehmen.
       </p>
       <Grid container spacing={1}>
-        <Grid item xs={12} md={6} xl={4}>
-          <img src="images/pages/home/outside.jpg" />
-          <Typography>Außensitzbereich neben dem Schützenhaus</Typography>
+        <Grid item xs={12} md={6}>
+          <CaptionImage
+            src="images/pages/home/outside.jpg"
+            label="Außensitzbereich neben dem Schützenhaus"
+          />
         </Grid>
-        <Grid item xs={12} md={6} xl={4}>
-          <img src="images/pages/home/views.jpg" />
-          <Typography>Aussicht vom Schützenhaus</Typography>
+        <Grid item xs={12} md={6}>
+          <CaptionImage
+            src="images/pages/home/views.jpg"
+            label="Aussicht vom Schützenhaus"
+          />
         </Grid>
-        <Grid item xs={12} md={6} xl={4}>
-          <img src="images/pages/home/cover.jpg" />
-          <Typography>Sommerbiathlon 2022</Typography>
+        <Grid item xs={12} md={6}>
+          <CaptionImage
+            src="images/pages/home/cover.jpg"
+            label="Sommerbiathlon 2022"
+          />
         </Grid>
       </Grid>
     </>

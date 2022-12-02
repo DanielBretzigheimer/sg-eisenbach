@@ -1,13 +1,14 @@
 import { useNavigate } from "@solidjs/router"
 import { Grid, Link, Typography } from "@suid/material"
+import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 
 export function ShootingRange50Meter() {
   const nav = useNavigate()
 
   return (
-    <Grid container>
-      <Grid item>
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
         <Typography gutterBottom variant="h2">
           50 Meter Stand
         </Typography>
@@ -20,11 +21,27 @@ export function ShootingRange50Meter() {
           dem Sichtfeld entfernt werden. Der Stand kann nun zum schießen von
           KK-Gewehren genutzt werden.
         </Typography>
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <CaptionImage
+          src="images/pages/shooting-ranges/50-meter/closed.jpg"
+          label="Geschlossen"
+        />
+      </Grid>
+      <Grid item xs={12} md={6}>
+        <CaptionImage
+          src="images/pages/shooting-ranges/50-meter/open.jpg"
+          label="Offen"
+        />
+      </Grid>
+      <Grid item xs={12} md={6}>
         <Typography gutterBottom>
           Ebenfalls bietet der Stand zusätzlich zum stehend Schießen auch die
           Möglichkeit sitzend oder liegend zu schießen. Hierfür befindet sich im
           vorderen Bereich eine Ausklappbare Liegefläche.
         </Typography>
+      </Grid>
+      <Grid item xs={12} md={6}>
         <Typography gutterBottom>
           Die letzten 20 Meter können zusätzlich als{" "}
           <Link onClick={() => nav(`/${RoutePath.ShootingRanges}/bow`)}>
@@ -32,6 +49,10 @@ export function ShootingRange50Meter() {
           </Link>{" "}
           genutzt werden.
         </Typography>
+        <CaptionImage
+          src="images/pages/shooting-ranges/50-meter/bow-hall.jpg"
+          label="Bogenhalle"
+        />
       </Grid>
     </Grid>
   )

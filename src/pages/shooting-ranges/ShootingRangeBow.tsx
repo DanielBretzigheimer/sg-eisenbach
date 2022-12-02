@@ -1,12 +1,13 @@
 import { useNavigate } from "@solidjs/router"
 import { Grid, Link, Typography } from "@suid/material"
+import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 
 export function ShootingRangeBow() {
   const nav = useNavigate()
 
   return (
-    <Grid container>
+    <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Typography gutterBottom variant="h2">
           Bogenplatz
@@ -19,13 +20,21 @@ export function ShootingRangeBow() {
           wahlweise auf 18 oder 30 Metern geschossen. Die am weitesten entfernte
           Scheibe steht auf 40 Metern.
         </Typography>
+        <CaptionImage
+          src="images/pages/shooting-ranges/bow/bow.jpg"
+          label="Bogenplatz am Tag"
+        />
         <Typography gutterBottom>
           Seit dem Jahr 2019 kann unser Bogenplatz auch beleuchtet werden,
           wodurch ein Benutzen des Platzes auch zu später Stunde möglich ist.
           Hierzu sind im Abstand von einigen Metern Laternen aufgestellt worden,
           die den gesamten Platz mit Licht erfüllen.
         </Typography>
-        <Typography>
+        <CaptionImage
+          src="images/pages/shooting-ranges/bow/bow-night.jpg"
+          label="Bogenplatz in der Nacht"
+        />
+        <Typography gutterBottom>
           Der Schlüssel für den Bogenplatz kann im Schützenhaus vom
           Wirtschaftsdienst abgeholt werden. Vor der Benutzung des Platzes ist
           die Absperrkette aufzuhängen, welche den Fußweg, der parallel zum
@@ -38,7 +47,7 @@ export function ShootingRangeBow() {
         <Typography gutterBottom variant="h2">
           Bogenhalle
         </Typography>
-        <Typography>
+        <Typography gutterBottom>
           Die Bogenhalle nutzt den hinteren Teil des{" "}
           <Link onClick={() => nav(`/${RoutePath.ShootingRanges}/50-meter`)}>
             50 Meter Standes
@@ -49,6 +58,10 @@ export function ShootingRangeBow() {
           wird ein Sicherungsnetz aufgespannt, das Pfeile, die ihr Ziel
           verfehlen auffängt.
         </Typography>
+        <CaptionImage
+          src="images/pages/shooting-ranges/bow/bow-hall.jpg"
+          label="Bogenhalle"
+        />
       </Grid>
     </Grid>
   )
