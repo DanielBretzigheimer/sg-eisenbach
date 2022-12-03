@@ -1,6 +1,7 @@
 import { useNavigate } from "@solidjs/router"
 import { Grid, Link, Stack, Typography } from "@suid/material"
 import { RoutePath } from "../../RoutePath"
+import { Royality } from "./Royality"
 
 export function Club() {
   const nav = useNavigate()
@@ -23,28 +24,27 @@ export function Club() {
             Chronik
           </Link>
         </Stack>
-        <Typography variant="h4">Königshaus</Typography>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h5">Erwachsene</Typography>
-        <Typography variant="overline">König</Typography>
-        <Typography>Daniel Bretzigheimer</Typography>
-        <Typography variant="overline">1. Ritter</Typography>
-        <Typography>Angela Hepp</Typography>
-        <Typography variant="overline">2. Ritter</Typography>
-        <Typography>Lucas Wollmann</Typography>
-      </Grid>
-      <Grid item xs={12} md={6}>
-        <Typography variant="h5">Jugend</Typography>
-        <Typography variant="overline">König</Typography>
-        <Typography>Lucas Köttig</Typography>
-        <Typography variant="overline">1. Ritter</Typography>
-        <Typography>Josi Raguse</Typography>
-        <Typography variant="overline">2. Ritter</Typography>
-        <Typography>Henri Graf</Typography>
-      </Grid>
+      <Royality
+        year="2021"
+        image={{
+          src: "images/pages/club/royality/royality-2021.jpg",
+          caption:
+            "v.l.n.r. Manuel Schott, Lucas Köttig, Angela Hepp, Daniel Bretzigheimer, Lucas Wollmann, Henri Graf, Wolfgang Heß, Josi Raguse",
+        }}
+        adult={{
+          king: "Daniel Bretzigheimer",
+          firstKnight: "Angela Hepp",
+          secondKnight: "Lucas Wollmann",
+        }}
+        youth={{
+          king: "Lucas Köttig",
+          firstKnight: "Josi Raguse",
+          secondKnight: "Henri Graf",
+        }}
+      />
       <Grid item xs={12}>
-        <Link onClick={() => nav(`/${RoutePath.Club}/historic-kings`)}>
+        <Link onClick={() => nav(`/${RoutePath.Club}/historic-royality`)}>
           Vergangene Könige
         </Link>
       </Grid>

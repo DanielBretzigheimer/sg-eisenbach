@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "@solidjs/router"
 import { Box } from "@suid/material"
 import Toolbar from "@suid/material/Toolbar"
 import { Club } from "./pages/club/Club"
-import { HistoricKings } from "./pages/club/HistoricKings"
+import { HistoricRoyality } from "./pages/club/HistoricRoyality"
 import { Join } from "./pages/club/Join"
 import { PrizeAndKingShooting } from "./pages/club/PrizeAndKingShooting"
 import { Timeline } from "./pages/club/Timeline"
@@ -97,8 +97,8 @@ export function Main() {
           <Route path={`/${RoutePath.Club}/join`} component={Join} />
           <Route path={`/${RoutePath.Club}/timeline`} component={Timeline} />
           <Route
-            path={`/${RoutePath.Club}/historic-kings`}
-            component={HistoricKings}
+            path={`/${RoutePath.Club}/historic-royality`}
+            component={HistoricRoyality}
           />
           <Route
             path={`/${RoutePath.Club}/prize-and-king-shooting`}
