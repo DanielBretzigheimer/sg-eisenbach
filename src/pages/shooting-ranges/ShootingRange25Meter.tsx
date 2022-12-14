@@ -1,8 +1,9 @@
-import { Grid, Typography } from "@suid/material"
+import { Box, Grid, Link, Typography } from "@suid/material"
+import { CaptionImage } from "../../controls/CaptionImage"
 
 export function ShootingRange25Meter() {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} mt={2}>
       <Grid item xs={12}>
         <Typography gutterBottom variant="h2">
           25 Meter Stand
@@ -28,7 +29,14 @@ export function ShootingRange25Meter() {
         <img src="images/pages/shooting-ranges/25-meter/range-with-binoculars.jpg" />
          */}
       </Grid>
-      <Grid item>
+      <Grid item xs={12}>
+        <Box marginBottom={2} maxWidth="400px" margin="auto">
+          <Link href="https://openresa.com/club/sge">
+            <img src="images/pages/shooting-ranges/25-meter/range-booking.svg" />
+          </Link>
+        </Box>
+      </Grid>
+      <Grid item xs={12}>
         <Typography gutterBottom variant="h3">
           Standplan
         </Typography>
