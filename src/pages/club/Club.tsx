@@ -26,21 +26,22 @@ export function Club() {
         </Stack>
       </Grid>
       <Royality
-        year="2021"
+        year="2022"
         image={{
-          src: "images/pages/club/royality/royality-2021.jpg",
+          src: "images/pages/events/2022/royal-shooting/royal-family.jpg",
           caption:
-            "v.l.n.r. Manuel Schott, Lucas Köttig, Angela Hepp, Daniel Bretzigheimer, Lucas Wollmann, Henri Graf, Wolfgang Heß, Josi Raguse",
+            "v.l.n.r: Wolfgang Heß, Gerhard Heß, Lucas Köttig, Tobias Bachmann, Manuel Schott, Daniel Bretzigheimer vorne: Maksim Kaiser, Henri Graf, Amelie Graf",
         }}
         adult={{
-          king: "Daniel Bretzigheimer",
-          firstKnight: "Angela Hepp",
-          secondKnight: "Lucas Wollmann",
+          king: "Lucas Köttig",
+          firstKnight: "Gerhard Heß",
+          secondKnight: "Justus Sievering",
+          robinHood: "Tobias Bachmann",
         }}
         youth={{
-          king: "Lucas Köttig",
-          firstKnight: "Josi Raguse",
-          secondKnight: "Henri Graf",
+          king: "Henri Graf",
+          firstKnight: "Maksim Kaiser",
+          secondKnight: "Amelie Graf",
         }}
       />
       <Grid item xs={12}>

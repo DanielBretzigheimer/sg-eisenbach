@@ -7,6 +7,7 @@ import { Join } from "./pages/club/Join"
 import { PrizeAndKingShooting } from "./pages/club/PrizeAndKingShooting"
 import { Timeline } from "./pages/club/Timeline"
 import Contact from "./pages/contact/Contact"
+import { RoyalShooting2022 } from "./pages/events/2022/RoyalShooting"
 import { Events } from "./pages/events/Events"
 import { Home } from "./pages/home/Home"
 import { DataProtection } from "./pages/imprint/DataProtection"
@@ -39,6 +40,10 @@ export function Main() {
           <Route path={`/${RoutePath.Home}`} component={Home} />
           <Route path={`/${RoutePath.Youth}`} component={Youth} />
           <Route path={`/${RoutePath.Events}`} component={Events} />
+          <Route
+            path={`/${RoutePath.Events}/2022/royal-shooting`}
+            component={RoyalShooting2022}
+          />
           <Route path={`/${RoutePath.Teams}`} component={Teams} />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-1`}
