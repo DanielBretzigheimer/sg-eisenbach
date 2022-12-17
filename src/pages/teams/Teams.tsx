@@ -7,7 +7,7 @@ export function Teams() {
   const navigate = useNavigate()
 
   return (
-    <Grid container mt={2}>
+    <Grid container mt={2} spacing={2}>
       <Grid item xs={12}>
         <Typography variant="h2" textAlign="center">
           Mannschaften

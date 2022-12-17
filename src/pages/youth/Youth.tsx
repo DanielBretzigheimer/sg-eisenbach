@@ -1,4 +1,6 @@
 import {
+  Card,
+  CardContent,
   Grid,
   Link,
   Table,
@@ -13,30 +15,40 @@ export function Youth() {
   return (
     <>
       <Grid container spacing={2} mt={1} mb={2}>
-        <Grid item xs={12} md={6} xl={4}>
-          <Typography variant="h4">Jugend Training</Typography>
-          <p>
-            Unser Jugendtraining findet jeden Dienstag (außer in den bayrischen
-            Schulferien) von 18:00 bis 20:00 Uhr statt. Interessierte dürfen in
-            dieser Zeit gerne vorbeischauen und sich das Training ansehen oder
-            an einem Probetraining teilnehmen.
-          </p>
-          <p>
-            Unser Training findet hauptsächlich mit dem Luft-/Lichtgewehr statt.
-            Wenn es im Sommer sehr heiß ist, gehen wir aber auch auf den
-            Bogenplatz oder trainieren mit dem Blasrohr.
-          </p>
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardContent>
+              <Typography variant="h5" gutterBottom>
+                Jugend Training
+              </Typography>
+              <Typography gutterBottom>
+                Unser Jugendtraining findet jeden Dienstag (außer in den
+                bayrischen Schulferien) von 18:00 bis 20:00 Uhr statt.
+                Interessierte dürfen in dieser Zeit gerne vorbeischauen und sich
+                das Training ansehen oder an einem Probetraining teilnehmen.
+              </Typography>
+              <Typography>
+                Unser Training findet hauptsächlich mit dem Luft-/Lichtgewehr
+                statt. Wenn es im Sommer sehr heiß ist, gehen wir aber auch auf
+                den Bogenplatz oder trainieren mit dem Blasrohr.
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
-        <Grid item xs={12} md={6} xl={4}>
-          <Typography variant="h4">Jugend Ausflüge</Typography>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell>14.01.2023</TableCell>
-                <TableCell>Jahresabschlusswanderung</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+        <Grid item xs={12} md={6}>
+          <Card>
+            <CardContent>
+              <Typography variant="h5">Jugend Ausflüge</Typography>
+            </CardContent>
+            <Table>
+              <TableBody>
+                <TableRow>
+                  <TableCell>14.01.2023</TableCell>
+                  <TableCell>Jahresabschlusswanderung</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </Card>
         </Grid>
         <Grid item xs={6} md={3}>
           <CaptionImage

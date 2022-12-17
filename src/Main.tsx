@@ -7,6 +7,7 @@ import { Join } from "./pages/club/Join"
 import { PrizeAndKingShooting } from "./pages/club/PrizeAndKingShooting"
 import { Timeline } from "./pages/club/Timeline"
 import Contact from "./pages/contact/Contact"
+import { TrailShooting } from "./pages/contact/TrialShooting"
 import { RoyalShooting2022 } from "./pages/events/2022/RoyalShooting"
 import { Events } from "./pages/events/Events"
 import { Home } from "./pages/home/Home"
@@ -110,6 +111,10 @@ export function Main() {
             component={PrizeAndKingShooting}
           />
           <Route path={`/${RoutePath.Contact}`} component={Contact} />
+          <Route
+            path={`/${RoutePath.Contact}/trial-shooting`}
+            component={TrailShooting}
+          />
           <Route
             path={`/${RoutePath.DataProtection}`}
             component={DataProtection}

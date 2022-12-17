@@ -27,6 +27,9 @@ export default function App() {
         mode: isDark ? "dark" : "light",
         primary: { main: blue[isDark ? 200 : 500] },
         secondary: { main: pink[isDark ? 200 : 500] },
+        background: {
+          default: "#f5f5f5",
+        },
       },
     })
   }

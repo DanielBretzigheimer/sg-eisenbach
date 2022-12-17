@@ -16,9 +16,14 @@ export function Home() {
         </Link>{" "}
         und könnt{" "}
         <Link onClick={() => navigate(`/${RoutePath.Contact}`)}>Kontakt</Link>{" "}
-        zu uns aufnehmen.
+        zu uns aufnehmen. Falls Sie interesse an einem Schnuppertraining haben,
+        finden Sie{" "}
+        <Link onClick={() => navigate(`/${RoutePath.Contact}/trial-shooting`)}>
+          hier
+        </Link>{" "}
+        weitere Informationen.
       </Typography>
-      <Grid container spacing={1}>
+      <Grid container spacing={2} mt={2}>
         <Grid item xs={12} md={6}>
           <CaptionImage
             src="images/pages/home/outside.jpg"
