@@ -10,7 +10,7 @@ export function Club() {
     <Grid container spacing={2}>
       <Grid item xs={12}>
         <Typography variant="h2">Verein</Typography>
-        <Stack direction="row" gap={1}>
+        <Stack direction="row" gap={1} mb={2}>
           <Link href="https://drive.google.com/file/d/0B38NBwtZxVHwOXZYX3JJS19qQVBIVlNwbzNmNDVwS2pEaUNF/view?resourcekey=0-4FCDdGqa-KDMMfCs1pWDRQ">
             Satzung
           </Link>
