@@ -40,7 +40,7 @@ export function Events() {
             </TableRow>
             <TableRow>
               <TableCell>Jahreshauptversammlung</TableCell>
-              <TableCell>03.02.2023</TableCell>
+              <TableCell>04.02.2023</TableCell>
               <TableCell>ab 15:00</TableCell>
             </TableRow>
             <TableRow>
