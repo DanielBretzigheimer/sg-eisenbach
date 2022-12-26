@@ -1,14 +1,11 @@
 import { useNavigate } from "@solidjs/router"
 import {
-  Box,
   Card,
   CardActionArea,
   CardContent,
-  Link,
   List,
   ListItem,
   ListItemText,
-  Stack,
   Typography,
 } from "@suid/material"
 import { RoutePath } from "../../RoutePath"
