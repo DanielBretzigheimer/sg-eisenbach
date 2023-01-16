@@ -1,3 +1,7 @@
+body {
+  hyphens: auto;
+}
+
 .MuiLink-root {
   cursor: pointer;
 }

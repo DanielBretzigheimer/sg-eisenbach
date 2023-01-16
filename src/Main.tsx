@@ -8,6 +8,7 @@ import { PrizeAndKingShooting } from "./pages/club/PrizeAndKingShooting"
 import { Timeline } from "./pages/club/timeline/Timeline"
 import Contact from "./pages/contact/Contact"
 import { TrailShooting } from "./pages/contact/TrialShooting"
+import { GeneralMeeting2023 } from "./pages/events/2023/GeneralMeeting"
 import { RoyalShooting2022 } from "./pages/events/2022/RoyalShooting"
 import { Events } from "./pages/events/Events"
 import { Home } from "./pages/home/Home"
@@ -30,6 +31,7 @@ import { SportPistolTwo } from "./pages/teams/sport-pistol/SportPistolTwo"
 import { Teams } from "./pages/teams/Teams"
 import { Youth } from "./pages/youth/Youth"
 import { RoutePath } from "./RoutePath"
+import { EventRoutes } from "./pages/events/EventRoutes"
 
 export function Main() {
   return (
@@ -40,11 +42,7 @@ export function Main() {
           <Route path="/" component={Home} />
           <Route path={`/${RoutePath.Home}`} component={Home} />
           <Route path={`/${RoutePath.Youth}`} component={Youth} />
-          <Route path={`/${RoutePath.Events}`} component={Events} />
-          <Route
-            path={`/${RoutePath.Events}/2022/royal-shooting`}
-            component={RoyalShooting2022}
-          />
+          <EventRoutes />
           <Route path={`/${RoutePath.Teams}`} component={Teams} />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-1`}

@@ -34,11 +34,6 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Neujahrsschießen</TableCell>
-              <TableCell>01.01.2023</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>Jahreshauptversammlung</TableCell>
               <TableCell>04.02.2023</TableCell>
               <TableCell>ab 15:00</TableCell>
@@ -46,6 +41,26 @@ export function Events() {
             <TableRow>
               <TableCell>Erbsensuppenessen</TableCell>
               <TableCell>01.05.2023</TableCell>
+              <TableCell>ab 11:00</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Sommerbiathlon</TableCell>
+              <TableCell>02.07.2023</TableCell>
+              <TableCell>ab 11:00</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Vereinsmeisterschaft</TableCell>
+              <TableCell>16.09.2023</TableCell>
+              <TableCell>ab 11:00</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Königsschießen</TableCell>
+              <TableCell>25.11.2023</TableCell>
+              <TableCell>ab 11:00</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Königsfeier</TableCell>
+              <TableCell>09.12.2023</TableCell>
               <TableCell>ab 11:00</TableCell>
             </TableRow>
           </TableBody>
@@ -56,6 +71,13 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItemButton
+            onClick={() =>
+              navigate(`/${RoutePath.Events}/2023/new-years-shooting`)
+            }
+          >
+            <ListItemText primary="Neujahrsschießen 2023" />
+          </ListItemButton>
           <ListItemButton
             onClick={() => navigate(`/${RoutePath.Events}/2022/royal-shooting`)}
           >
