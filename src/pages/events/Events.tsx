@@ -4,6 +4,7 @@ import {
   Card,
   CardContent,
   List,
+  ListItem,
   ListItemButton,
   ListItemText,
   Table,
@@ -33,11 +34,6 @@ export function Events() {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
-              <TableCell>Jahreshauptversammlung</TableCell>
-              <TableCell>04.02.2023</TableCell>
-              <TableCell>ab 15:00</TableCell>
-            </TableRow>
             <TableRow>
               <TableCell>Erbsensuppenessen</TableCell>
               <TableCell>01.05.2023</TableCell>
@@ -71,6 +67,9 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItem>
+            <ListItemText primary="Jahreshauptversammlung 2023" />
+          </ListItem>
           <ListItemButton
             onClick={() =>
               navigate(`/${RoutePath.Events}/2023/new-years-shooting`)

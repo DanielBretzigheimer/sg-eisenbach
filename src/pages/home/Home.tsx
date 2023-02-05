@@ -16,23 +16,6 @@ export function Home() {
 
   return (
     <>
-      <Alert
-        severity="info"
-        action={
-          <Button
-            color="inherit"
-            size="small"
-            onClick={() =>
-              navigate(`/${RoutePath.Events}/2023/general-meeting`)
-            }
-          >
-            Mehr Infos
-          </Button>
-        }
-      >
-        <AlertTitle>Jahreshauptversammlung</AlertTitle>
-        Die Jahreshauptversammlung findet am 04.02.2023 statt.
-      </Alert>
       <Box mt={2}>
         <Typography gutterBottom>
           Herzlich willkommen auf der Website der Schützengesellschaft
