@@ -2,7 +2,7 @@ import { Typography } from "@suid/material"
 
 type LabelImageProps = {
   src: string
-  label: string
+  label?: string
 }
 
 export function CaptionImage(props: LabelImageProps) {

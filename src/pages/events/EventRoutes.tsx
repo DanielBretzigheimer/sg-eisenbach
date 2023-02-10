@@ -1,7 +1,7 @@
 import { Route } from "@solidjs/router"
 import { RoutePath } from "../../RoutePath"
 import { RoyalShooting2022 } from "./2022/RoyalShooting"
-import { GeneralMeeting2023 } from "./2023/GeneralMeeting"
+import { GeneralMeeting2023 } from "./2023/GeneralMeeting2023"
 import { NewYearsShooting2023 } from "./2023/NewYearsShooting"
 import { Events } from "./Events"
 

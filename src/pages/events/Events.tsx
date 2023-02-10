@@ -67,9 +67,13 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
-          <ListItem>
+          <ListItemButton
+            onClick={() =>
+              navigate(`/${RoutePath.Events}/2023/general-meeting`)
+            }
+          >
             <ListItemText primary="Jahreshauptversammlung 2023" />
-          </ListItem>
+          </ListItemButton>
           <ListItemButton
             onClick={() =>
               navigate(`/${RoutePath.Events}/2023/new-years-shooting`)

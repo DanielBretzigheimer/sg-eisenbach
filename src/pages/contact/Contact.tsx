@@ -137,15 +137,24 @@ export default function Contact() {
                         </Link>
                       </TableCell>
                     </TableRow>
+                    <TableRow>
+                      <TableCell>Jugendleiter</TableCell>
+                      <TableCell>
+                        <Link href="mailto:1.jl@sg-eisenbach1958.de">
+                          Daniel Bretzigheimer
+                        </Link>
+                      </TableCell>
+                    </TableRow>
                   </TableBody>
                 </Table>
               </Grid>
               <Grid item xs={12} md={6}>
                 <img src="images/pages/contact/board.jpg" />
                 <Box m={1} mt={0}>
-                  <Typography variant="caption">
-                    Von links nach rechts: Stefan Andres, Willi Korn, Isolde
-                    Müller, Sandra Schott, Manuel Schott, Wolfgang Heß
+                  <Typography variant="caption" sx={{ hyphens: "none" }}>
+                    Von links nach rechts: Daniel Bretzigheimer, Jochen Beez,
+                    Manuel Schott, Sandra Schott, Wolfgang Heß, Angela Hepp,
+                    Christian Otterstedt
                   </Typography>
                 </Box>
               </Grid>
