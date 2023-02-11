@@ -1,5 +1,6 @@
 import { useNavigate } from "@solidjs/router"
 import {
+  Box,
   Card,
   CardActionArea,
   CardContent,
@@ -19,7 +20,7 @@ export function ShootingRangePreview(props: {
   const navigate = useNavigate()
 
   return (
-    <Card>
+    <Card sx={{ height: "100%" }}>
       <CardActionArea
         onClick={() => navigate(`/${RoutePath.ShootingRanges}/${props.url}`)}
       >

@@ -1,12 +1,13 @@
 import { Grid, Typography } from "@suid/material"
-import { WorkInProgress } from "../../controls/WorkInProgress"
 import { ShootingRangePreview } from "./ShootingRangePreview"
 
 export function ShootingRanges() {
   return (
     <Grid container spacing={2} mt={2}>
       <Grid item xs={12}>
-        <Typography variant="h2">Schießstände</Typography>
+        <Typography variant="h2" textAlign="center">
+          Schießstände
+        </Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <ShootingRangePreview
