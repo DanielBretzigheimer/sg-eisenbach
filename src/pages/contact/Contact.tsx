@@ -12,6 +12,7 @@ import {
   TableRow,
   Typography,
 } from "@suid/material"
+import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 
 export default function Contact() {
@@ -19,7 +20,9 @@ export default function Contact() {
 
   return (
     <Box mt={2}>
-      <Typography variant="h3">Kontakt</Typography>
+      <Typography variant="h3" gutterBottom>
+        Kontakt
+      </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Card>
@@ -81,12 +84,12 @@ export default function Contact() {
           </Card>
         </Grid>
         <Grid item xs={12}>
-          <Card>
-            <CardContent>
-              <Typography variant="h5">Vorstandschaft</Typography>
-            </CardContent>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Card>
+                <CardContent>
+                  <Typography variant="h5">Vorstandschaft</Typography>
+                </CardContent>
                 <Table>
                   <TableBody>
                     <TableRow>
@@ -147,19 +150,15 @@ export default function Contact() {
                     </TableRow>
                   </TableBody>
                 </Table>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <img src="images/pages/contact/board.jpg" />
-                <Box m={1} mt={0}>
-                  <Typography variant="caption" sx={{ hyphens: "none" }}>
-                    Von links nach rechts: Daniel Bretzigheimer, Jochen Beez,
-                    Manuel Schott, Sandra Schott, Wolfgang Heß, Angela Hepp,
-                    Christian Otterstedt
-                  </Typography>
-                </Box>
-              </Grid>
+              </Card>
             </Grid>
-          </Card>
+            <Grid item xs={12} md={6}>
+              <CaptionImage
+                src="images/pages/contact/board.jpg"
+                label="Von links nach rechts: Daniel Bretzigheimer, Jochen Beez, Manuel Schott, Sandra Schott, Wolfgang Heß, Angela Hepp, Christian Otterstedt"
+              />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Box>

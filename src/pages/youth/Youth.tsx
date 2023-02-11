@@ -99,12 +99,13 @@ export function Youth() {
           <Typography variant="h4">Jugendleiter</Typography>
         </Grid>
         <Grid item xs={6} md={3}>
-          <img src="images/pages/youth/youth-leader-1.jpg" />
-          <Typography variant="caption">
-            <Link href="mailto:1.jl@sg-eisenbach1958.de">
-              Daniel Bretzigheimer
-            </Link>
-          </Typography>
+          <CaptionImage
+            src="images/pages/youth/youth-leader-1.jpg"
+            label="Daniel Bretzigheimer"
+            onClick={() =>
+              (window.location.href = "mailto:1.jl@sg-eisenbach1958.de")
+            }
+          />
         </Grid>
         <Grid item xs={6} md={3}>
           <CaptionImage

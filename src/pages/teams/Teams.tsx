@@ -1,5 +1,13 @@
 import { useNavigate } from "@solidjs/router"
-import { Grid, Link, Typography } from "@suid/material"
+import {
+  Grid,
+  Link,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Typography,
+} from "@suid/material"
 import { RoutePath } from "../../RoutePath"
 import { TeamCategory } from "./TeamCategory"
 
@@ -17,45 +25,71 @@ export function Teams() {
         imageSrc="images/pages/teams/air-rifle.png"
         title="Luftgewehr"
       >
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-1`)}>
-          Luftgewehr 1
-        </Link>
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-2`)}>
-          Luftgewehr 2
-        </Link>
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-3`)}>
-          Luftgewehr 3
-        </Link>
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-4`)}>
-          Luftgewehr 4
-        </Link>
+        <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-1`)}
+          >
+            <ListItemText>Luftgewehr 1</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-2`)}
+          >
+            <ListItemText>Luftgewehr 2</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-3`)}
+          >
+            <ListItemText>Luftgewehr 3</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/luftgewehr-4`)}
+          >
+            <ListItemText>Luftgewehr 4</ListItemText>
+          </ListItemButton>
+        </List>
       </TeamCategory>
       <TeamCategory
         imageSrc="images/pages/teams/air-pistol.png"
         title="Luftpistole"
       >
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/luftpistole-1`)}>
-          Luftpistole 1
-        </Link>
+        <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/luftpistole-1`)}
+          >
+            <ListItemText>Luftpistole 1</ListItemText>
+          </ListItemButton>
+        </List>
       </TeamCategory>
       <TeamCategory
         imageSrc="images/pages/teams/sport-pistol.png"
         title="Sportpistole"
       >
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-1`)}>
-          Sportpistole 1
-        </Link>
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-2`)}>
-          Sportpistole 2
-        </Link>
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-3`)}>
-          Sportpistole 3
-        </Link>
+        <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-1`)}
+          >
+            <ListItemText>Sportpistole 1</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-2`)}
+          >
+            <ListItemText>Sportpistole 2</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-3`)}
+          >
+            <ListItemText>Sportpistole 3</ListItemText>
+          </ListItemButton>
+        </List>
       </TeamCategory>
       <TeamCategory imageSrc="images/pages/teams/bow.png" title="Bogen">
-        <Link onClick={() => navigate(`/${RoutePath.Teams}/bogen-1`)}>
-          Bogen 1
-        </Link>
+        <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/bogen-1`)}
+          >
+            <ListItemText>Bogen 1</ListItemText>
+          </ListItemButton>
+        </List>
       </TeamCategory>
     </Grid>
   )

@@ -38,18 +38,6 @@ export function Home() {
         <Grid container spacing={2} mt={2}>
           <Grid item xs={12} md={6}>
             <CaptionImage
-              src="images/pages/home/outside.jpg"
-              label="Außensitzbereich neben dem Schützenhaus"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CaptionImage
-              src="images/pages/home/views.jpg"
-              label="Aussicht vom Schützenhaus"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CaptionImage
               src="images/pages/home/cover.jpg"
               label="Schützenhaus"
             />
@@ -58,6 +46,18 @@ export function Home() {
             <CaptionImage
               src="images/pages/home/event.jpg"
               label="Sommerbiathlon 2022"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <CaptionImage
+              src="images/pages/home/outside.jpg"
+              label="Außensitzbereich neben dem Schützenhaus"
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <CaptionImage
+              src="images/pages/home/views.jpg"
+              label="Aussicht vom Schützenhaus"
             />
           </Grid>
         </Grid>

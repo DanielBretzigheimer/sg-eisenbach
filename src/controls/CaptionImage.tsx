@@ -1,15 +1,37 @@
-import { Typography } from "@suid/material"
+import { Box, ButtonBase, Typography } from "@suid/material"
 
 type LabelImageProps = {
   src: string
   label?: string
+  onClick?: () => void
 }
 
 export function CaptionImage(props: LabelImageProps) {
   return (
-    <>
-      <img src={props.src} />
-      <Typography variant="caption">{props.label}</Typography>
-    </>
+    <ButtonBase
+      sx={{
+        borderRadius: 4,
+        overflow: "hidden",
+        position: "relative",
+        textAlign: "left",
+      }}
+      disabled={!props.onClick}
+      onClick={props.onClick}
+    >
+      <img style={{ "vertical-align": "middle" }} src={props.src} />
+      <Box
+        position="absolute"
+        width="100%"
+        p={1}
+        pt={2}
+        bottom={0}
+        sx={{
+          background:
+            "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, rgba(1,1,1,0) 100%)",
+        }}
+      >
+        <Typography variant="caption">{props.label}</Typography>
+      </Box>
+    </ButtonBase>
   )
 }
