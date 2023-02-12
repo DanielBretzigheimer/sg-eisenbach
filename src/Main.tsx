@@ -33,8 +33,7 @@ import { EventRoutes } from "./pages/events/EventRoutes"
 export function Main() {
   return (
     <>
-      <Toolbar />
-      <Box mb={4}>
+      <Box mt={10} mb={4}>
         <Routes>
           <Route path="/" component={Home} />
           <Route path={`/${RoutePath.Home}`} component={Home} />

@@ -1,15 +1,12 @@
 import { useNavigate } from "@solidjs/router"
-import {
-  Alert,
-  AlertTitle,
-  Box,
-  Button,
-  Grid,
-  Link,
-  Typography,
-} from "@suid/material"
+import { Box, Button, Grid, Link, Stack, Typography } from "@suid/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
+import {
+  CalendarTodayOutlined,
+  MailOutline,
+  GroupOutlined,
+} from "@suid/icons-material"
 
 export function Home() {
   const navigate = useNavigate()
@@ -17,10 +14,10 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
+        <Typography variant="h2">Home</Typography>
         <Typography gutterBottom>
-          Herzlich willkommen auf der Website der Schützengesellschaft
-          Eisenbach. Hier findet ihr aktuelle Informationen über den Verein,
-          kommende{" "}
+          Herzlich willkommen auf unserer Website. Hier findet ihr aktuelle
+          Informationen über den Verein, kommende{" "}
           <Link onClick={() => navigate(`/${RoutePath.Events}`)}>
             Veranstaltungen
           </Link>{" "}
@@ -35,7 +32,7 @@ export function Home() {
           </Link>{" "}
           weitere Informationen.
         </Typography>
-        <Grid container spacing={2} mt={2}>
+        <Grid container spacing={2} mt={1}>
           <Grid item xs={12} md={6}>
             <CaptionImage
               src="images/pages/home/cover.jpg"

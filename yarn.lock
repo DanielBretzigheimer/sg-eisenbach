@@ -355,12 +355,29 @@
     "@suid/utils" "0.6.0"
     clsx "^1.2.1"
 
+"@suid/base@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@suid/base/-/base-0.6.3.tgz#bf9e5d5faafa98c61f767e473f76ffd6328faee8"
+  integrity sha512-LrQEmkXySozrgwf482i9AaK9fmYzN8UVxEGZd+8pufjDY6MzJFYHm363ODm8Kjho2L96wqWGuGBxO6uSIKtazQ==
+  dependencies:
+    "@popperjs/core" "^2.11.6"
+    "@suid/css" "0.2.1"
+    "@suid/system" "0.8.3"
+    "@suid/types" "0.4.0"
+    "@suid/utils" "0.6.1"
+    clsx "^1.2.1"
+
 "@suid/css@0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@suid/css/-/css-0.1.7.tgz#97f186eb1a9b94d29d55490a899d22c1fb48f3aa"
   integrity sha512-SBRGHwBndin52tgLAyVlu0cNcDeBJVYA0E4cfo7TO0Jmicmn3xgWXG8Ie7kSDnS8tSf9IZuVnXHaq9deZfdvdA==
   dependencies:
     "@suid/utils" "0.6.0"
+
+"@suid/css@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@suid/css/-/css-0.2.1.tgz#15c33a70f3979f7b0718575dfb7324e435217d98"
+  integrity sha512-ictV73loNG7BH9ID5PRGnuMryrAHOfyspaCZsQUzz5cTeLttFYgD/QKUcWr4FEG/1O7GVzgJlqtIT1r55LbCtw==
 
 "@suid/icons-material@^0.5.0":
   version "0.5.0"
@@ -369,7 +386,19 @@
   dependencies:
     "@suid/material" "0.7.0"
 
-"@suid/material@0.7.0", "@suid/material@^0.7.0":
+"@suid/material@0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.10.1.tgz#417412e313d4440da4ed5c7a1188a35f759fa805"
+  integrity sha512-58MZRbC3z4kTiIfS1v2DrNypINrSBjydhIKV61419m1N35v04aKCoprB4jYhPHhDgIRyQ7a+glMddKSuCwWVqw==
+  dependencies:
+    "@suid/base" "0.6.3"
+    "@suid/css" "0.2.1"
+    "@suid/system" "0.8.3"
+    "@suid/types" "0.4.0"
+    "@suid/utils" "0.6.1"
+    clsx "^1.2.1"
+
+"@suid/material@0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.7.0.tgz#a6e49b1941d5edf8ee4a12fc02a66121d4e27c55"
   integrity sha512-/1u/6cFqP+a3AqJslt6z5asWs2bt1769eYW9u9lyzaAUnO8SF76/grzn4KxwNrcEYl4hwZZfjKh2Q1qNUIRA6A==
@@ -389,6 +418,14 @@
     "@suid/css" "0.1.7"
     "@suid/utils" "0.6.0"
 
+"@suid/styled-engine@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@suid/styled-engine/-/styled-engine-0.4.1.tgz#94e7887cfa3e0a34a2fc2f98ca17c604a99f978d"
+  integrity sha512-TzY/2zuspzVnx8q5PG04FgNzkJlESLZwxMYQK4VkIuqTm4CrC8VNMunBBUdv+4DVpQKArtO1ZnTGNNtE34rD8Q==
+  dependencies:
+    "@suid/css" "0.2.1"
+    "@suid/utils" "0.6.1"
+
 "@suid/system@0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@suid/system/-/system-0.6.0.tgz#ba0e394c60a75558d756a780e5db59ad42c9b228"
@@ -401,10 +438,27 @@
     clsx "^1.2.1"
     csstype "^3.1.1"
 
+"@suid/system@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@suid/system/-/system-0.8.3.tgz#9f8545abf684d92a8246b905359a07ba01836b7b"
+  integrity sha512-zWG/gOycH02EU5KHvRSWuJwKQnRgb1MXKbcZewOu0HYoOx6nTy6hWtoMFVbuYGLpMlzW8W8ABen91qhGWFDlNA==
+  dependencies:
+    "@suid/css" "0.2.1"
+    "@suid/styled-engine" "0.4.1"
+    "@suid/types" "0.4.0"
+    "@suid/utils" "0.6.1"
+    clsx "^1.2.1"
+    csstype "^3.1.1"
+
 "@suid/types@0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@suid/types/-/types-0.3.0.tgz#ef4bc89b6a287bd1f91a2f897ccc1164983b29da"
   integrity sha512-MrfSnnI8oyPy+TtSIG6qVZyqVN7GMH49uRbw8ACLEek2T1keG2NtLNgNWhiWv51bP0CwBAalwt+QGcN4b/3OSw==
+
+"@suid/types@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@suid/types/-/types-0.4.0.tgz#86feb1cb09e5a2b9a229d037e450e5811928bf6f"
+  integrity sha512-rafpWrES+G8peLp1L7rm6QHGd+yhMV01jIzFDTzLIYgv8cQk4AsoKfgzZVfPysptF24owD9491Dv4BAzQY+XFA==
 
 "@suid/utils@0.6.0":
   version "0.6.0"
@@ -412,6 +466,13 @@
   integrity sha512-1s5mRYbYCFzzo/t1tCvP72IizDNMjAIsV7SsBHqAQRayfQIlAaQv9D2HAQ0QW2WxHIQTsi4JLPZI/0MdiU12Vw==
   dependencies:
     "@suid/types" "0.3.0"
+
+"@suid/utils@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@suid/utils/-/utils-0.6.1.tgz#c8578779f1748bd62313c26e40d1adadb8fb34c8"
+  integrity sha512-Fg6oblOZIjZYnbF/kigE3GcqfVxN2kpmaVPpAeqTDvHNeHWzDI/rEWEXZI4nJ5WzToXDYOLHhYiQYWPDDsXPHA==
+  dependencies:
+    "@suid/types" "0.4.0"
 
 "@suid/vite-plugin@^0.1.0":
   version "0.1.0"
