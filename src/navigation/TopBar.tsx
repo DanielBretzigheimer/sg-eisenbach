@@ -11,11 +11,11 @@ type TopBarProps = {
 
 export function TopBar(props: TopBarProps) {
   return (
-    <AppBar color="inherit" enableColorOnDark={true}>
+    <AppBar color="inherit" enableColorOnDark={true} elevation={0}>
       <Container disableGutters>
         <Toolbar>
           <Box width={56} mr={1} mt={0.5}>
-            <img src="/images/logo.png" />
+            <img src="/images/logo.png" class="invert-dark" />
           </Box>
           <Typography sx={{ flexGrow: 1 }}>SG Eisenbach 1958 e.V.</Typography>
           <IconButton

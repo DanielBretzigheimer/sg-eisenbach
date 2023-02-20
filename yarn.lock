@@ -386,10 +386,10 @@
   dependencies:
     "@suid/material" "0.7.0"
 
-"@suid/material@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.10.1.tgz#417412e313d4440da4ed5c7a1188a35f759fa805"
-  integrity sha512-58MZRbC3z4kTiIfS1v2DrNypINrSBjydhIKV61419m1N35v04aKCoprB4jYhPHhDgIRyQ7a+glMddKSuCwWVqw==
+"@suid/material@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@suid/material/-/material-0.10.2.tgz#78f0224f55c8fdf2f17b2999e4efef6e1140c12e"
+  integrity sha512-J9G9dvwLqRyiLcYlt4JbGORJT/Yji+9P8efifsAVAmAoSSPr5kirnraoWaoqmuGJtCKCd0Gj7ksxi8r7sRgpzg==
   dependencies:
     "@suid/base" "0.6.3"
     "@suid/css" "0.2.1"
