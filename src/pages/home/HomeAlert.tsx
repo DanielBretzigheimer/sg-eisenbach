@@ -1,13 +1,15 @@
 import { useNavigate } from "@solidjs/router"
 import { Alert, AlertTitle, Button } from "@suid/material"
-import { RoutePath } from "../../RoutePath"
 
 type HomeAlertProps = {
   title: string
   content: string
   action: {
     text: string
-    url: string
+    /**
+     * May be a url or an element id.
+     */
+    target: string
   }
 }
 
@@ -21,7 +23,11 @@ export function HomeAlert(props: HomeAlertProps) {
         <Button
           color="inherit"
           size="small"
-          onClick={() => navigate(props.action.url)}
+          onClick={() =>
+            props.action.target.includes("/")
+              ? navigate(props.action.target)
+              : document.getElementById(props.action.target).scrollIntoView()
+          }
         >
           {props.action.text}
         </Button>

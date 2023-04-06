@@ -1,12 +1,8 @@
 import { useNavigate } from "@solidjs/router"
-import { Box, Button, Grid, Link, Stack, Typography } from "@suid/material"
+import { Box, Grid, Link, Typography } from "@suid/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
-import {
-  CalendarTodayOutlined,
-  MailOutline,
-  GroupOutlined,
-} from "@suid/icons-material"
+import { HomeAlert } from "./HomeAlert"
 
 export function Home() {
   const navigate = useNavigate()
@@ -14,25 +10,56 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
-        <Typography variant="h2">Home</Typography>
-        <Typography gutterBottom>
-          Herzlich willkommen auf unserer Website. Hier findet ihr aktuelle
-          Informationen über den Verein, kommende{" "}
-          <Link onClick={() => navigate(`/${RoutePath.Events}`)}>
-            Veranstaltungen
-          </Link>{" "}
-          und könnt{" "}
-          <Link onClick={() => navigate(`/${RoutePath.Contact}`)}>Kontakt</Link>{" "}
-          zu uns aufnehmen. Falls Sie interesse an einem Schnuppertraining
-          haben, finden Sie{" "}
-          <Link
-            onClick={() => navigate(`/${RoutePath.Contact}/trial-shooting`)}
-          >
-            hier
-          </Link>{" "}
-          weitere Informationen.
-        </Typography>
         <Grid container spacing={2} mt={1}>
+          <Grid item xs={12}>
+            <Typography variant="h2">Home</Typography>
+            <HomeAlert
+              title="1. Mai Feier"
+              content="Wie jedes Jahr, laden wir sie auch in diesem Jahr wieder herzlich zu unserem traditionellen Erbsensuppenessen ein. Wir freuen uns auf Ihr Kommen!"
+              action={{
+                text: "Plakat anzeigen",
+                target: "may-celebration-info",
+              }}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} lg={8}>
+            <Typography gutterBottom>
+              Herzlich Willkommen auf der Website der Schützengesellschaft
+              Eisenbach 1958 e.V.! Wir freuen uns, dass Sie den Weg zu uns
+              gefunden haben und laden Sie herzlich ein, sich über unseren
+              Verein und unser vielfältiges Angebot zu informieren. Bei uns
+              finden Sie nicht nur ein anspruchsvolles sportliches Programm,
+              sondern auch eine lebendige Gemeinschaft, die das Schießen als
+              Hobby und Leidenschaft teilt. Wir wünschen Ihnen viel Spaß beim
+              Stöbern auf unserer Website und hoffen, Sie bald persönlich bei
+              uns begrüßen zu dürfen!
+            </Typography>
+            <Typography gutterBottom>
+              Auf unserer Website finden Sie auch Informationen zu kommenden{" "}
+              <Link onClick={() => navigate(`/${RoutePath.Events}`)}>
+                Veranstaltungen
+              </Link>
+              . Außerdem bieten wir auch die Möglichkeit, bei uns ein{" "}
+              <Link
+                onClick={() => navigate(`/${RoutePath.Contact}/trial-shooting`)}
+              >
+                Schnuppertraining
+              </Link>{" "}
+              zu absolvieren und die Faszination des Schießsports selbst zu
+              erleben. Interessierte können sich über die{" "}
+              <Link onClick={() => navigate(`/${RoutePath.Contact}`)}>
+                Kontaktmöglichkeiten
+              </Link>{" "}
+              auf unserer Website mit uns in Verbindung setzen und sich über die
+              Details informieren. Wir stehen Ihnen gerne für Fragen zur
+              Verfügung.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={4}>
+            <Box id="may-celebration-info" sx={{ scrollMargin: "72px" }}>
+              <CaptionImage src="images/pages/events/2023/may-celebration/may-celebration-2023.jpg" />
+            </Box>
+          </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
               src="images/pages/home/cover.jpg"

@@ -19,21 +19,23 @@ export function CaptionImage(props: LabelImageProps) {
       onClick={props.onClick}
     >
       <img style={{ "vertical-align": "middle" }} src={props.src} />
-      <Box
-        position="absolute"
-        width="100%"
-        p={1}
-        pt={2}
-        bottom={0}
-        sx={{
-          background:
-            "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, rgba(1,1,1,0) 100%)",
-        }}
-      >
-        <Typography color="white" variant="caption">
-          {props.label}
-        </Typography>
-      </Box>
+      {props.label && (
+        <Box
+          position="absolute"
+          width="100%"
+          p={1}
+          pt={2}
+          bottom={0}
+          sx={{
+            background:
+              "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, rgba(1,1,1,0) 100%)",
+          }}
+        >
+          <Typography color="white" variant="caption">
+            {props.label}
+          </Typography>
+        </Box>
+      )}
     </ButtonBase>
   )
 }
