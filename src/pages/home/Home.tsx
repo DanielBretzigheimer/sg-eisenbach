@@ -14,11 +14,11 @@ export function Home() {
           <Grid item xs={12}>
             <Typography variant="h2">Home</Typography>
             <HomeAlert
-              title="1. Mai Feier"
-              content="Wie jedes Jahr, laden wir sie auch in diesem Jahr wieder herzlich zu unserem traditionellen Erbsensuppenessen ein. Wir freuen uns auf Ihr Kommen!"
+              title="14. Sommerbiathlon"
+              content="Am 02. Juli findet unser Sommerbiathlon statt. Wir freuen uns auf Ihr Kommen!"
               action={{
                 text: "Plakat anzeigen",
-                target: "may-celebration-info",
+                target: "summer-biathlon-info",
               }}
             />
           </Grid>
@@ -56,8 +56,8 @@ export function Home() {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} lg={4}>
-            <Box id="may-celebration-info" sx={{ scrollMargin: "72px" }}>
-              <CaptionImage src="images/pages/events/2023/may-celebration/may-celebration-2023.jpg" />
+            <Box id="summer-biathlon-info" sx={{ scrollMargin: "72px" }}>
+              <CaptionImage src="images/pages/events/2023/summer-biathlon/summer-biathlon-2023.jpg" />
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
