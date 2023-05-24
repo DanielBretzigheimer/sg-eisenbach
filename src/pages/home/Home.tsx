@@ -17,8 +17,8 @@ export function Home() {
               title="14. Sommerbiathlon"
               content="Am 02. Juli findet unser Sommerbiathlon statt. Wir freuen uns auf Ihr Kommen!"
               action={{
-                text: "Plakat anzeigen",
-                target: "summer-biathlon-info",
+                text: "mehr Infos",
+                target: `/${RoutePath.Events}/2023/summer-biathlon`,
               }}
             />
           </Grid>

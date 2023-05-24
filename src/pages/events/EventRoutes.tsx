@@ -4,6 +4,7 @@ import { RoyalShooting2022 } from "./2022/RoyalShooting"
 import { GeneralMeeting2023 } from "./2023/GeneralMeeting2023"
 import { NewYearsShooting2023 } from "./2023/NewYearsShooting"
 import { Events } from "./Events"
+import { SummerBiathlon2023 } from "./2023/SummerBiathlon2023"
 
 export function EventRoutes() {
   return (
@@ -20,6 +21,10 @@ export function EventRoutes() {
       <Route
         path={`/${RoutePath.Events}/2023/general-meeting`}
         component={GeneralMeeting2023}
+      />
+      <Route
+        path={`/${RoutePath.Events}/2023/summer-biathlon`}
+        component={SummerBiathlon2023}
       />
     </>
   )
