@@ -1,5 +1,5 @@
 import { useNavigate } from "@solidjs/router"
-import { Box, Grid, Link, Typography } from "@suid/material"
+import { Box, Grid, Link, Stack, Typography } from "@suid/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 import { HomeAlert } from "./HomeAlert"
@@ -13,14 +13,24 @@ export function Home() {
         <Grid container spacing={2} mt={1}>
           <Grid item xs={12}>
             <Typography variant="h2">Home</Typography>
-            <HomeAlert
-              title="14. Sommerbiathlon"
-              content="Am 02. Juli findet unser Sommerbiathlon statt. Wir freuen uns auf Ihr Kommen!"
-              action={{
-                text: "mehr Infos",
-                target: `/${RoutePath.Events}/2023/summer-biathlon`,
-              }}
-            />
+            <Stack gap={1}>
+              <HomeAlert
+                title="14. Sommerbiathlon"
+                content="Am 02. Juli findet unser Sommerbiathlon statt. Wir freuen uns auf euer Kommen!"
+                action={{
+                  text: "mehr Infos",
+                  target: `/${RoutePath.Events}/2023/summer-biathlon`,
+                }}
+              />
+              <HomeAlert
+                title="Sommer-Ferienprogramm"
+                content="Wir sind beim Sommer-Ferienprogramm der Stadt Obernburg dabei."
+                action={{
+                  text: "mehr Infos",
+                  target: `/${RoutePath.Events}/2023/summer-holiday-program`,
+                }}
+              />
+            </Stack>
           </Grid>
           <Grid item xs={12} sm={6} lg={8}>
             <Typography gutterBottom>
