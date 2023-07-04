@@ -43,20 +43,12 @@ export function Youth() {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>02.06.2023</TableCell>
-                  <TableCell>Sommerbiathlon</TableCell>
-                </TableRow>
-                <TableRow>
                   <TableCell>05.08. - 06.08.2023</TableCell>
                   <TableCell>Stadtfest Obernburg</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>16.09.2023</TableCell>
                   <TableCell>Vereinsmeisterschaft</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Termin folgt</TableCell>
-                  <TableCell>Aktion Saubere Flur</TableCell>
                 </TableRow>
               </TableBody>
             </Table>

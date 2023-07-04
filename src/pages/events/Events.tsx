@@ -3,7 +3,6 @@ import {
   Box,
   Card,
   CardContent,
-  Link,
   List,
   ListItem,
   ListItemButton,
@@ -36,19 +35,6 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>
-                <Link
-                  onClick={() =>
-                    navigate(`/${RoutePath.Events}/2023/summer-biathlon`)
-                  }
-                >
-                  Sommerbiathlon
-                </Link>
-              </TableCell>
-              <TableCell>02.07.2023</TableCell>
-              <TableCell>ab 11:30</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>Vereinsmeisterschaft</TableCell>
               <TableCell>16.09.2023</TableCell>
               <TableCell></TableCell>
@@ -71,6 +57,9 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItem>
+            <ListItemText primary="Sommerbiathlon 2023" />
+          </ListItem>
           <ListItem>
             <ListItemText primary="Erbsensuppenessen 2023" />
           </ListItem>

@@ -15,14 +15,6 @@ export function Home() {
             <Typography variant="h2">Home</Typography>
             <Stack gap={1}>
               <HomeAlert
-                title="14. Sommerbiathlon"
-                content="Am 02. Juli findet unser Sommerbiathlon statt. Wir freuen uns auf euer Kommen!"
-                action={{
-                  text: "mehr Infos",
-                  target: `/${RoutePath.Events}/2023/summer-biathlon`,
-                }}
-              />
-              <HomeAlert
                 title="Sommer-Ferienprogramm"
                 content="Wir sind beim Sommer-Ferienprogramm der Stadt Obernburg dabei."
                 action={{
@@ -32,7 +24,7 @@ export function Home() {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} sm={6} lg={8}>
+          <Grid item xs={12}>
             <Typography gutterBottom>
               Herzlich Willkommen auf der Website der Schützengesellschaft
               Eisenbach 1958 e.V.! Wir freuen uns, dass Sie den Weg zu uns
@@ -65,21 +57,10 @@ export function Home() {
               Verfügung.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} lg={4}>
-            <Box id="summer-biathlon-info" sx={{ scrollMargin: "72px" }}>
-              <CaptionImage src="images/pages/events/2023/summer-biathlon/summer-biathlon-2023.jpg" />
-            </Box>
-          </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
               src="images/pages/home/cover.jpg"
               label="Schützenhaus"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CaptionImage
-              src="images/pages/home/event.jpg"
-              label="Sommerbiathlon 2022"
             />
           </Grid>
           <Grid item xs={12} md={6}>
