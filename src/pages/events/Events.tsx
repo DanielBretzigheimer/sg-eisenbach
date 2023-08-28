@@ -57,6 +57,13 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItemButton
+            onClick={() =>
+              navigate(`/${RoutePath.Events}/2023/summer-holiday-program`)
+            }
+          >
+            <ListItemText primary="Sommerferienspiele 2023" />
+          </ListItemButton>
           <ListItem>
             <ListItemText primary="Sommerbiathlon 2023" />
           </ListItem>

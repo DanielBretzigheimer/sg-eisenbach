@@ -38,17 +38,41 @@ export function Youth() {
         <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
-              <Typography variant="h5">Jugend Ausflüge</Typography>
+              <Typography variant="h5">Jugend Ausflüge und Termine</Typography>
             </CardContent>
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>05.08. - 06.08.2023</TableCell>
-                  <TableCell>Stadtfest Obernburg</TableCell>
+                  <TableCell>08.09.2023</TableCell>
+                  <TableCell>Jugendvergleichsschießen 1</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>16.09.2023</TableCell>
                   <TableCell>Vereinsmeisterschaft</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>12.09.2023</TableCell>
+                  <TableCell>Jugendvergleichsschießen 2</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>15.09.2023</TableCell>
+                  <TableCell>Jugendvergleichsschießen 3</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>November</TableCell>
+                  <TableCell>Preisschießen</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>25.11.2023</TableCell>
+                  <TableCell>Königsschießen</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>09.12.2023</TableCell>
+                  <TableCell>Königsfeier</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Dezember</TableCell>
+                  <TableCell>Jahresabschlusswanderung</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -77,7 +101,7 @@ export function Youth() {
         <Grid item xs={6} md={3}>
           <CaptionImage
             src="images/pages/youth/youth-leader-1.jpg"
-            label="Daniel Bretzigheimer"
+            label="Daniel Bretzigheimer\n1.jl@sg-eisenbach1958.de"
             onClick={() =>
               (window.location.href = "mailto:1.jl@sg-eisenbach1958.de")
             }

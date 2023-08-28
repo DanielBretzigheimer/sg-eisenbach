@@ -13,7 +13,7 @@ export function Home() {
         <Grid container spacing={2} mt={1}>
           <Grid item xs={12}>
             <Typography variant="h2">Home</Typography>
-            <Stack gap={1}>
+            {/*<Stack gap={1}>
               <HomeAlert
                 title="Sommer-Ferienprogramm"
                 content="Wir sind beim Sommer-Ferienprogramm der Stadt Obernburg dabei."
@@ -22,7 +22,7 @@ export function Home() {
                   target: `/${RoutePath.Events}/2023/summer-holiday-program`,
                 }}
               />
-            </Stack>
+              </Stack>*/}
           </Grid>
           <Grid item xs={12}>
             <Typography gutterBottom>

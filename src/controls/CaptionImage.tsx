@@ -31,7 +31,7 @@ export function CaptionImage(props: LabelImageProps) {
               "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 70%, rgba(1,1,1,0) 100%)",
           }}
         >
-          <Typography color="white" variant="caption">
+          <Typography color="white" variant="caption" whiteSpace="break-spaces">
             {props.label}
           </Typography>
         </Box>
