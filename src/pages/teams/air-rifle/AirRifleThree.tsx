@@ -12,7 +12,7 @@ export function AirRifleThree() {
         { name: "Manuel Schott" },
         { name: "Julian Vogl" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=46&sel_discipline_id=6&sel_class_id=2"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=53&sel_discipline_id=6&sel_class_id=2&showCombined=0"
     />
   )
 }

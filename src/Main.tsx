@@ -61,10 +61,10 @@ export function Main() {
             component={AirPistolOne}
           />
           <Route path={`/${RoutePath.Teams}/bogen-1`} component={BowOne} />
-          <Route
+          {/*<Route
             path={`/${RoutePath.Teams}/sportpistole-1`}
             component={SportPistolOne}
-          />
+            />*/}
           <Route
             path={`/${RoutePath.Teams}/sportpistole-2`}
             component={SportPistolTwo}

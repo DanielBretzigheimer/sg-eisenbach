@@ -14,7 +14,7 @@ export function AirPistolOne() {
         { name: "Emin Acig" },
         { name: "Werner Berger" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=47&sel_discipline_id=7&sel_class_id=12"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=52&sel_discipline_id=2&sel_class_id=11&showCombined=0"
     />
   )
 }

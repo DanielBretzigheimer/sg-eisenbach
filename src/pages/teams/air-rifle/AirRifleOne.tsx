@@ -9,11 +9,11 @@ export function AirRifleOne() {
           name: "Christian Otterstedt",
           isLeader: true,
         },
-        { name: "Charlotte Bischof" },
+        { name: "Justus Sievering" },
         { name: "Hannah Kloos" },
         { name: "Daniel Bretzigheimer" },
       ]}
-      resultLink="https://rwk-onlinemelder.de/online/listen/800?sel_group_id=33&sel_discipline_id=1&sel_class_id=3"
+      resultLink="https://rwk-onlinemelder.de/online/listen/800?sel_group_id=36&sel_discipline_id=1&sel_class_id=3"
     />
   )
 }

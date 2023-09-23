@@ -14,7 +14,7 @@ export function SportPistolTwo() {
         { name: "Manuel Schott" },
         { name: "Michael Berger" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=48&sel_discipline_id=8&sel_class_id=19"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=51&sel_discipline_id=8&sel_class_id=19"
     />
   )
 }

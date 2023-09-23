@@ -11,9 +11,9 @@ export function AirRifleTwo() {
         },
         { name: "Michi Rücker" },
         { name: "Marcel Sator" },
-        { name: "Justus Sievering" },
+        { name: "Aaron Korn" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=46&sel_discipline_id=1&sel_class_id=1"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=53&sel_discipline_id=1&sel_class_id=1&showCombined=0"
     />
   )
 }

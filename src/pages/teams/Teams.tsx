@@ -65,11 +65,11 @@ export function Teams() {
         title="Sportpistole"
       >
         <List>
-          <ListItemButton
+          {/*<ListItemButton
             onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-1`)}
           >
             <ListItemText>Sportpistole 1</ListItemText>
-          </ListItemButton>
+  </ListItemButton>*/}
           <ListItemButton
             onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-2`)}
           >

@@ -13,11 +13,9 @@ export function BowOne() {
         { name: "Christian Otterstedt" },
         { name: "Bernd Müller" },
         { name: "Justus Sievering" },
-        { name: "Saskia Stegmann" },
-        { name: "Jochen Stegmann" },
         { name: "Silke Fernsebner" },
       ]}
-      resultLink="https://www.gau-maintal.de/G-RWK-Dateien/G-RWK-Disziplin2.php?par1=BG&jahr=2023"
+      resultLink="https://www.gau-maintal.de/G-RWK-Dateien/G-RWK-Disziplin2.php?par1=BG&jahr=2024"
     />
   )
 }
