@@ -8,7 +8,7 @@ import {
   TableHead,
   TableRow,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 
 export function TrailShooting() {
   return (

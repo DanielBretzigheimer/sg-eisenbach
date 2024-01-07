@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid, Stack, Typography } from "@suid/material"
+import { Card, CardContent, Grid, Stack, Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 
 export function SummerBiathlon2023() {

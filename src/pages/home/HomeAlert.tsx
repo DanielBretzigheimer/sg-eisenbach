@@ -1,5 +1,5 @@
-import { useNavigate } from "@solidjs/router"
-import { Alert, AlertTitle, Button } from "@suid/material"
+import { useNavigate } from "react-router-dom"
+import { Alert, AlertTitle, Button } from "@mui/material"
 
 type HomeAlertProps = {
   title: string

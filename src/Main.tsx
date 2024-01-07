@@ -1,6 +1,5 @@
-import { Navigate, Route, Routes } from "@solidjs/router"
-import { Box } from "@suid/material"
-import Toolbar from "@suid/material/Toolbar"
+import { Navigate, Route, Routes } from "react-router-dom"
+import { Box } from "@mui/material"
 import { Club } from "./pages/club/Club"
 import { HistoricRoyality } from "./pages/club/HistoricRoyality"
 import { Join } from "./pages/club/Join"
@@ -22,99 +21,126 @@ import { AirRifleOne } from "./pages/teams/air-rifle/AirRifleOne"
 import { AirRifleThree } from "./pages/teams/air-rifle/AirRifleThree"
 import { AirRifleTwo } from "./pages/teams/air-rifle/AirRifleTwo"
 import { BowOne } from "./pages/teams/bow/BowOne"
-import { SportPistolOne } from "./pages/teams/sport-pistol/SportPistolOne"
 import { SportPistolThree } from "./pages/teams/sport-pistol/SportPistolThree"
 import { SportPistolTwo } from "./pages/teams/sport-pistol/SportPistolTwo"
 import { Teams } from "./pages/teams/Teams"
 import { Youth } from "./pages/youth/Youth"
 import { RoutePath } from "./RoutePath"
-import { EventRoutes } from "./pages/events/EventRoutes"
+import { RoyalShooting2022 } from "./pages/events/2022/RoyalShooting"
+import { NewYearsShooting2023 } from "./pages/events/2023/NewYearsShooting"
+import { GeneralMeeting2023 } from "./pages/events/2023/GeneralMeeting2023"
+import { SummerBiathlon2023 } from "./pages/events/2023/SummerBiathlon2023"
+import { SummerHolidayProgram2023 } from "./pages/events/2023/SummerHolidayProgram2023"
+import { Events } from "./pages/events/Events"
 
 export function Main() {
   return (
     <>
       <Box mt={10} mb={4}>
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path={`/${RoutePath.Home}`} component={Home} />
-          <Route path={`/${RoutePath.Youth}`} component={Youth} />
-          <EventRoutes />
-          <Route path={`/${RoutePath.Teams}`} component={Teams} />
+          <Route path="/" element={<Home />} />
+          <Route path={`/${RoutePath.Home}`} element={<Home />} />
+          <Route path={`/${RoutePath.Youth}`} element={<Youth />} />
+
+          {/* Event Routes */}
+          <Route path={`/${RoutePath.Events}`} element={<Events />} />
+          <Route
+            path={`/${RoutePath.Events}/2022/royal-shooting`}
+            element={<RoyalShooting2022 />}
+          />
+          <Route
+            path={`/${RoutePath.Events}/2023/new-years-shooting`}
+            element={<NewYearsShooting2023 />}
+          />
+          <Route
+            path={`/${RoutePath.Events}/2023/general-meeting`}
+            element={<GeneralMeeting2023 />}
+          />
+          <Route
+            path={`/${RoutePath.Events}/2023/summer-biathlon`}
+            element={<SummerBiathlon2023 />}
+          />
+          <Route
+            path={`/${RoutePath.Events}/2023/summer-holiday-program`}
+            element={<SummerHolidayProgram2023 />}
+          />
+
+          <Route path={`/${RoutePath.Teams}`} element={<Teams />} />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-1`}
-            component={AirRifleOne}
+            element={<AirRifleOne />}
           />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-2`}
-            component={AirRifleTwo}
+            element={<AirRifleTwo />}
           />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-3`}
-            component={AirRifleThree}
+            element={<AirRifleThree />}
           />
           <Route
             path={`/${RoutePath.Teams}/luftgewehr-4`}
-            component={AirRifleFour}
+            element={<AirRifleFour />}
           />
           <Route
             path={`/${RoutePath.Teams}/luftpistole-1`}
-            component={AirPistolOne}
+            element={<AirPistolOne />}
           />
-          <Route path={`/${RoutePath.Teams}/bogen-1`} component={BowOne} />
+          <Route path={`/${RoutePath.Teams}/bogen-1`} element={<BowOne />} />
           {/*<Route
             path={`/${RoutePath.Teams}/sportpistole-1`}
-            component={SportPistolOne}
+            element={<SportPistolOne />}
             />*/}
           <Route
             path={`/${RoutePath.Teams}/sportpistole-2`}
-            component={SportPistolTwo}
+            element={<SportPistolTwo />}
           />
           <Route
             path={`/${RoutePath.Teams}/sportpistole-3`}
-            component={SportPistolThree}
+            element={<SportPistolThree />}
           />
           <Route
             path={`/${RoutePath.ShootingRanges}`}
-            component={ShootingRanges}
+            element={<ShootingRanges />}
           />
           <Route
             path={`/${RoutePath.ShootingRanges}/10-meter`}
-            component={ShootingRange10Meter}
+            element={<ShootingRange10Meter />}
           />
           <Route
             path={`/${RoutePath.ShootingRanges}/25-meter`}
-            component={ShootingRange25Meter}
+            element={<ShootingRange25Meter />}
           />
           <Route
             path={`/${RoutePath.ShootingRanges}/50-meter`}
-            component={ShootingRange50Meter}
+            element={<ShootingRange50Meter />}
           />
           <Route
             path={`/${RoutePath.ShootingRanges}/bow`}
-            component={ShootingRangeBow}
+            element={<ShootingRangeBow />}
           />
-          <Route path={`/${RoutePath.Club}`} component={Club} />
-          <Route path={`/${RoutePath.Club}/join`} component={Join} />
-          <Route path={`/${RoutePath.Club}/timeline`} component={Timeline} />
+          <Route path={`/${RoutePath.Club}`} element={<Club />} />
+          <Route path={`/${RoutePath.Club}/join`} element={<Join />} />
+          <Route path={`/${RoutePath.Club}/timeline`} element={<Timeline />} />
           <Route
             path={`/${RoutePath.Club}/historic-royality`}
-            component={HistoricRoyality}
+            element={<HistoricRoyality />}
           />
           <Route
             path={`/${RoutePath.Club}/prize-and-king-shooting`}
-            component={PrizeAndKingShooting}
+            element={<PrizeAndKingShooting />}
           />
-          <Route path={`/${RoutePath.Contact}`} component={Contact} />
+          <Route path={`/${RoutePath.Contact}`} element={<Contact />} />
           <Route
             path={`/${RoutePath.Contact}/trial-shooting`}
-            component={TrailShooting}
+            element={<TrailShooting />}
           />
           <Route
             path={`/${RoutePath.DataProtection}`}
-            component={DataProtection}
+            element={<DataProtection />}
           />
-          <Route path={`/${RoutePath.Imprint}`} component={Imprint} />
-          <Route path="*" element={<Navigate href="/" />} />
+          <Route path={`/${RoutePath.Imprint}`} element={<Imprint />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Box>
     </>

@@ -1,4 +1,4 @@
-import { Box, Grid, Link, Typography } from "@suid/material"
+import { Box, Grid, Link, Typography } from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 
 export function ShootingRange25Meter() {

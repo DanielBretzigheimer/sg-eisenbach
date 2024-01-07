@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "@solidjs/router"
+import { useLocation, useNavigate } from "react-router-dom"
 import {
   Box,
   Divider,
@@ -7,7 +7,7 @@ import {
   ListItemButton,
   Stack,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 import { RoutePath } from "../RoutePath"
 
 type NavigationDrawerProps = {
@@ -65,13 +65,13 @@ export default function NavigationDrawer(props: NavigationDrawerProps) {
       <Drawer variant="temporary" open={props.open} onClose={props.onClose}>
         <Stack direction="row" alignItems="center">
           <Box width={70} padding={1}>
-            <img class="invert-dark" src="images/logo.png" />
+            <img className="invert-dark" src="images/logo.png" />
           </Box>
           <Typography variant="h5">SG Eisenbach</Typography>
         </Stack>
         <List sx={{ minWidth: "300px" }}>
           {navigationTargets.map((target) => (
-            <>
+            <Box key={target.route}>
               <ListItemButton
                 onClick={() => goTo(target)}
                 selected={location.pathname === `/${target.route}`}
@@ -79,7 +79,7 @@ export default function NavigationDrawer(props: NavigationDrawerProps) {
                 {target.label}
               </ListItemButton>
               <Divider />
-            </>
+            </Box>
           ))}
         </List>
       </Drawer>

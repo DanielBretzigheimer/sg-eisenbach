@@ -1,5 +1,5 @@
-import { Stack, Typography } from "@suid/material"
-import CraneIcon from "@suid/icons-material/Build"
+import { Stack, Typography } from "@mui/material"
+import CraneIcon from "@mui/icons-material/Build"
 
 export function WorkInProgress() {
   return (

@@ -1,4 +1,4 @@
-import { Grid, Link, Typography } from "@suid/material"
+import { Grid, Link, Typography } from "@mui/material"
 
 export function Join() {
   return (

@@ -1,5 +1,5 @@
-import Link from "@suid/material/Link"
-import Typography from "@suid/material/Typography"
+import Link from "@mui/material/Link"
+import Typography from "@mui/material/Typography"
 
 export function DataProtection() {
   return (

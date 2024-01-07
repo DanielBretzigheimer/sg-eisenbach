@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@suid/material"
+import { Box, Stack, Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 
 export function SummerHolidayProgram2023() {

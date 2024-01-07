@@ -1,4 +1,4 @@
-import { Box, ButtonBase, Typography } from "@suid/material"
+import { Box, ButtonBase, Typography } from "@mui/material"
 
 type LabelImageProps = {
   src: string
@@ -18,7 +18,7 @@ export function CaptionImage(props: LabelImageProps) {
       disabled={!props.onClick}
       onClick={props.onClick}
     >
-      <img style={{ "vertical-align": "middle" }} src={props.src} />
+      <img style={{ verticalAlign: "middle" }} src={props.src} />
       {props.label && (
         <Box
           position="absolute"

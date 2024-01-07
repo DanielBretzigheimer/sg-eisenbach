@@ -1,4 +1,4 @@
-import { useNavigate } from "@solidjs/router"
+import { useNavigate } from "react-router-dom"
 import {
   Box,
   Card,
@@ -11,7 +11,7 @@ import {
   TableCell,
   TableRow,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 

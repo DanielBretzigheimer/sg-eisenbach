@@ -8,7 +8,7 @@ import {
   TableCell,
   TableRow,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 
 export function Youth() {

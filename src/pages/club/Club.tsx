@@ -1,5 +1,5 @@
-import { useNavigate } from "@solidjs/router"
-import { Grid, Link, Stack, Typography } from "@suid/material"
+import { useNavigate } from "react-router-dom"
+import { Grid, Link, Stack, Typography } from "@mui/material"
 import { RoutePath } from "../../RoutePath"
 import { Royality } from "./Royality"
 

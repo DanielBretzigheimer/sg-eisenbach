@@ -6,11 +6,11 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "types": [
-      "vite/client"
-    ],
+    "jsxImportSource": "react",
+    "types": ["vite/client"],
     "noEmit": true,
-    "isolatedModules": true
-  }
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
 }

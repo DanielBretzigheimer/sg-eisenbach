@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@suid/material"
+import { Grid, Typography } from "@mui/material"
 
 export function PrizeAndKingShooting() {
   return (

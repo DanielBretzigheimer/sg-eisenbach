@@ -1,5 +1,5 @@
-import { useNavigate } from "@solidjs/router"
-import { Box, Grid, Link, Stack, Typography } from "@suid/material"
+import { useNavigate } from "react-router-dom"
+import { Box, Grid, Link, Stack, Typography } from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
 import { HomeAlert } from "./HomeAlert"

@@ -1,4 +1,4 @@
-import { Grid } from "@suid/material"
+import { Grid } from "@mui/material"
 import { Royality } from "./Royality"
 
 export function HistoricRoyality() {

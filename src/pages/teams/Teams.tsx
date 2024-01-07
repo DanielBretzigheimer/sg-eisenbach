@@ -1,4 +1,4 @@
-import { useNavigate } from "@solidjs/router"
+import { useNavigate } from "react-router-dom"
 import {
   Grid,
   Link,
@@ -7,7 +7,7 @@ import {
   ListItemButton,
   ListItemText,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 import { RoutePath } from "../../RoutePath"
 import { TeamCategory } from "./TeamCategory"
 

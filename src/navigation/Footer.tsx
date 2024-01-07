@@ -1,8 +1,8 @@
-import { useNavigate } from "@solidjs/router"
-import { Stack } from "@suid/material"
-import Box from "@suid/material/Box"
-import Link from "@suid/material/Link"
-import Typography from "@suid/material/Typography"
+import { useNavigate } from "react-router-dom"
+import { Stack } from "@mui/material"
+import Box from "@mui/material/Box"
+import Link from "@mui/material/Link"
+import Typography from "@mui/material/Typography"
 import { RoutePath } from "../RoutePath"
 
 export function Footer() {

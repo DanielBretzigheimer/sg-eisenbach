@@ -1,4 +1,4 @@
-import { Box, Typography } from "@suid/material"
+import { Box, Typography } from "@mui/material"
 
 export function Timeline() {
   return (

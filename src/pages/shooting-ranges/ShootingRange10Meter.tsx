@@ -1,5 +1,5 @@
-import { useNavigate } from "@solidjs/router"
-import { Box, Grid, Link, Stack, Typography } from "@suid/material"
+import { useNavigate } from "react-router-dom"
+import { Box, Grid, Link, Stack, Typography } from "@mui/material"
 import { RoutePath } from "../../RoutePath"
 
 export function ShootingRange10Meter() {

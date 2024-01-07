@@ -1,5 +1,4 @@
-import { Box, Card, CardContent, Grid, Stack, Typography } from "@suid/material"
-import { JSX } from "solid-js"
+import { Box, Card, Grid } from "@mui/material"
 
 type TeamCategoryProps = {
   imageSrc: string
@@ -13,7 +12,7 @@ export function TeamCategory(props: TeamCategoryProps) {
       <Card sx={{ height: "100%" }}>
         <Box pl={2} pr={2} pt={2}>
           <img
-            style={{ height: "150px", "object-fit": "contain" }}
+            style={{ height: "150px", objectFit: "contain" }}
             src={props.imageSrc}
           />
         </Box>

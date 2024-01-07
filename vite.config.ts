@@ -1,10 +1,6 @@
 import { defineConfig } from "vite"
-import suidPlugin from "@suid/vite-plugin"
-import solidPlugin from "vite-plugin-solid"
+import react from "@vitejs/plugin-react-swc"
 
 export default defineConfig({
-  plugins: [suidPlugin(), solidPlugin()],
-  build: {
-    target: "esnext",
-  },
+  plugins: [react()],
 })

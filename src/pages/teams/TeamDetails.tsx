@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from "@suid/material"
+import { Box, Link, Typography } from "@mui/material"
 
 type TeamDetailProps = {
   title: string

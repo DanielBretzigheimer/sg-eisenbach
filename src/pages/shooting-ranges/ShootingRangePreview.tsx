@@ -1,4 +1,4 @@
-import { useNavigate } from "@solidjs/router"
+import { useNavigate } from "react-router-dom"
 import {
   Box,
   Card,
@@ -8,7 +8,7 @@ import {
   ListItem,
   ListItemText,
   Typography,
-} from "@suid/material"
+} from "@mui/material"
 import { RoutePath } from "../../RoutePath"
 
 export function ShootingRangePreview(props: {

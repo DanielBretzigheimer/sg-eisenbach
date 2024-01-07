@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Typography } from "@suid/material"
+import { Box, List, ListItem, Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 
 export function GeneralMeeting2023() {

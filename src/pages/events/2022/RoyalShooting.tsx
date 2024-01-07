@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from "@suid/material"
+import { Box, Divider, Grid, Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 
 export function RoyalShooting2022() {

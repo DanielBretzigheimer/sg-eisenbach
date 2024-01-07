@@ -1,4 +1,4 @@
-import { Typography } from "@suid/material"
+import { Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 
 export function NewYearsShooting2023() {
