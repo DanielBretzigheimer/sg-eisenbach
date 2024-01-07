@@ -32,6 +32,7 @@ import { GeneralMeeting2023 } from "./pages/events/2023/GeneralMeeting2023"
 import { SummerBiathlon2023 } from "./pages/events/2023/SummerBiathlon2023"
 import { SummerHolidayProgram2023 } from "./pages/events/2023/SummerHolidayProgram2023"
 import { Events } from "./pages/events/Events"
+import { RoyalShooting2023 } from "./pages/events/2023/RoyalShooting2023"
 
 export function Main() {
   return (
@@ -63,6 +64,10 @@ export function Main() {
           <Route
             path={`/${RoutePath.Events}/2023/summer-holiday-program`}
             element={<SummerHolidayProgram2023 />}
+          />
+          <Route
+            path={`/${RoutePath.Events}/2023/royal-shooting`}
+            element={<RoyalShooting2023 />}
           />
 
           <Route path={`/${RoutePath.Teams}`} element={<Teams />} />

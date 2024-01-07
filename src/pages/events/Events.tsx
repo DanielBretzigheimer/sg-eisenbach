@@ -35,19 +35,9 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Vereinsmeisterschaft</TableCell>
-              <TableCell>16.09.2023</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Königsschießen</TableCell>
-              <TableCell>25.11.2023</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Königsfeier</TableCell>
-              <TableCell>09.12.2023</TableCell>
-              <TableCell></TableCell>
+              <TableCell colSpan={3}>
+                Die Termine für 2024 werden hier in kürze veröffentlicht.
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -57,6 +47,14 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Events}/2023/royal-shooting`)}
+          >
+            <ListItemText primary="Königsschießen 2023" />
+          </ListItemButton>
+          <ListItem>
+            <ListItemText primary="Vereinsmeisterschaft 2023" />
+          </ListItem>
           <ListItemButton
             onClick={() =>
               navigate(`/${RoutePath.Events}/2023/summer-holiday-program`)

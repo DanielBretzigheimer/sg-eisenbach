@@ -5,6 +5,25 @@ export function HistoricRoyality() {
   return (
     <Grid container mt={2} spacing={2}>
       <Royality
+        year="2022"
+        image={{
+          src: "images/pages/events/2022/royal-shooting/royal-family.jpg",
+          caption:
+            "v.l.n.r: Wolfgang Heß, Gerhard Heß, Lucas Köttig, Tobias Bachmann, Manuel Schott, Daniel Bretzigheimer vorne: Maksim Kaiser, Henri Graf, Amelie Graf",
+        }}
+        adult={{
+          king: "Lucas Köttig",
+          firstKnight: "Gerhard Heß",
+          secondKnight: "Justus Sievering",
+          robinHood: "Tobias Bachmann",
+        }}
+        youth={{
+          king: "Henri Graf",
+          firstKnight: "Maksim Kaiser",
+          secondKnight: "Amelie Graf",
+        }}
+      />
+      <Royality
         year="2021"
         image={{
           src: "images/pages/club/royality/royality-2021.jpg",

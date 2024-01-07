@@ -43,36 +43,40 @@ export function Youth() {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>08.09.2023</TableCell>
-                  <TableCell>Jugendvergleichsschießen 1</TableCell>
+                  <TableCell>14.01.2024</TableCell>
+                  <TableCell>Gaumeisterschaft in Sulzbach</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>16.09.2023</TableCell>
+                  <TableCell>27.01.2024</TableCell>
+                  <TableCell>Jahresabschlusswanderung zum Dönerjosef</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>08.02.2024</TableCell>
+                  <TableCell>Eishalle Aschaffenburg</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>16.03.2024</TableCell>
+                  <TableCell>Besuch im Hallenbad Miltenberg</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>19.03.2024</TableCell>
+                  <TableCell>Osterschießen</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>April</TableCell>
                   <TableCell>Vereinsmeisterschaft</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>12.09.2023</TableCell>
-                  <TableCell>Jugendvergleichsschießen 2</TableCell>
+                  <TableCell>11.05.2024</TableCell>
+                  <TableCell>Wanderung zum Sophienhof</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>15.09.2023</TableCell>
-                  <TableCell>Jugendvergleichsschießen 3</TableCell>
+                  <TableCell>Juli</TableCell>
+                  <TableCell>Sommerbiathlon am Schützenhaus</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>November</TableCell>
-                  <TableCell>Preisschießen</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>25.11.2023</TableCell>
-                  <TableCell>Königsschießen</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>09.12.2023</TableCell>
-                  <TableCell>Königsfeier</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Dezember</TableCell>
-                  <TableCell>Jahresabschlusswanderung</TableCell>
+                  <TableCell>Termin folgt</TableCell>
+                  <TableCell>Aktion Saubere Flur</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -101,7 +105,7 @@ export function Youth() {
         <Grid item xs={6} md={3}>
           <CaptionImage
             src="images/pages/youth/youth-leader-1.jpg"
-            label="Daniel Bretzigheimer\n1.jl@sg-eisenbach1958.de"
+            label="Daniel Bretzigheimer"
             onClick={() =>
               (window.location.href = "mailto:1.jl@sg-eisenbach1958.de")
             }

@@ -30,7 +30,7 @@ export function ShootingRangePreview(props: {
         </CardContent>
         <List>
           {props.details.map((detail) => (
-            <ListItem>
+            <ListItem key={detail}>
               <ListItemText primary={detail} />
             </ListItem>
           ))}
