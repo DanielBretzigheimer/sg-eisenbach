@@ -9,7 +9,7 @@ export function NewYearsShooting2023() {
       </Typography>
       <CaptionImage
         label="Gewinner des Neujahrsschießen"
-        src="images/pages/events/2023/new-years-shooting/new-years-shooting.jpg"
+        src="images/pages/events/2024/new-years-shooting/new-years-shooting.jpg"
       />
       <Typography>
         „Prost Neujoahr - Geldsack vor und Brezeln so groß wie`s Scheunentor.“

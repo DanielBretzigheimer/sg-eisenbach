@@ -35,9 +35,39 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell colSpan={3}>
-                Die Termine für 2024 werden hier in kürze veröffentlicht.
-              </TableCell>
+              <TableCell>Jahreshauptversammlung</TableCell>
+              <TableCell>03.02.2024</TableCell>
+              <TableCell>15:00 Uhr</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Erbsensuppenessen</TableCell>
+              <TableCell>01.05.2024</TableCell>
+              <TableCell>ab 11:00 Uhr</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Sommerbiathlon</TableCell>
+              <TableCell>07.07.2024</TableCell>
+              <TableCell>ab 11:00 Uhr</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Schießstand auf dem Stadtfest Obernburg</TableCell>
+              <TableCell>03.04. - 04.04.2024</TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Schießstand auf der Kerb in Eisenbach</TableCell>
+              <TableCell>29.09.2024</TableCell>
+              <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Königsschießen</TableCell>
+              <TableCell>23.11.2024</TableCell>
+              <TableCell>15:00 Uhr</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Königsfeier</TableCell>
+              <TableCell>30.11.2024</TableCell>
+              <TableCell>19:00 Uhr</TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -47,6 +77,13 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItemButton
+            onClick={() =>
+              navigate(`/${RoutePath.Events}/2024/new-years-shooting`)
+            }
+          >
+            <ListItemText primary="Neujahrsschießen 2024" />
+          </ListItemButton>
           <ListItemButton
             onClick={() => navigate(`/${RoutePath.Events}/2023/royal-shooting`)}
           >
