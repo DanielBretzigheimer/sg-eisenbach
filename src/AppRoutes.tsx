@@ -33,6 +33,7 @@ import { SummerHolidayProgram2023 } from "./pages/events/2023/SummerHolidayProgr
 import { Events } from "./pages/events/Events"
 import { RoyalShooting2023 } from "./pages/events/2023/RoyalShooting2023"
 import { NewYearsShooting2024 } from "./pages/events/2024/NewYearsShooting2024"
+import { GeneralMeeting2024 } from "./pages/events/2024/GeneralMeeting2024"
 
 export function AppRoutes() {
   return (
@@ -71,7 +72,10 @@ export function AppRoutes() {
         path={`/${RoutePath.Events}/2024/new-years-shooting`}
         element={<NewYearsShooting2024 />}
       />
-
+      <Route
+        path={`/${RoutePath.Events}/2024/general-meeting`}
+        element={<GeneralMeeting2024 />}
+      />
       <Route path={`/${RoutePath.Teams}`} element={<Teams />} />
       <Route
         path={`/${RoutePath.Teams}/luftgewehr-1`}
