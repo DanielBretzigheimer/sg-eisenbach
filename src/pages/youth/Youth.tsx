@@ -43,24 +43,16 @@ export function Youth() {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>14.01.2024</TableCell>
-                  <TableCell>Gaumeisterschaft in Sulzbach</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>27.01.2024</TableCell>
-                  <TableCell>Jahresabschlusswanderung zum Dönerjosef</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>08.02.2024</TableCell>
-                  <TableCell>Eishalle Aschaffenburg</TableCell>
-                </TableRow>
-                <TableRow>
                   <TableCell>16.03.2024</TableCell>
                   <TableCell>Besuch im Hallenbad Miltenberg</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>19.03.2024</TableCell>
                   <TableCell>Osterschießen</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>23.03.2024</TableCell>
+                  <TableCell>Aktion Saubere Flur</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>April</TableCell>
@@ -73,10 +65,6 @@ export function Youth() {
                 <TableRow>
                   <TableCell>Juli</TableCell>
                   <TableCell>Sommerbiathlon am Schützenhaus</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Termin folgt</TableCell>
-                  <TableCell>Aktion Saubere Flur</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
