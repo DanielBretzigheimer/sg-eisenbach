@@ -43,10 +43,6 @@ export function Youth() {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>16.03.2024</TableCell>
-                  <TableCell>Besuch im Hallenbad Miltenberg</TableCell>
-                </TableRow>
-                <TableRow>
                   <TableCell>19.03.2024</TableCell>
                   <TableCell>Osterschießen</TableCell>
                 </TableRow>
