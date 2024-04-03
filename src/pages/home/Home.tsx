@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import { Box, Grid, Link, Stack, Typography } from "@mui/material"
+import { Box, Grid, Link, Typography } from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
-import { HomeAlert } from "./HomeAlert"
 
 export function Home() {
   const navigate = useNavigate()
@@ -10,10 +9,7 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
-        <Grid container spacing={2} mt={1}>
-          <Grid item xs={12}>
-            <Typography variant="h2">Home</Typography>
-            {/*<Stack gap={1}>
+        {/*<Stack gap={1}>
               <HomeAlert
                 title="Jahreshauptversammlung"
                 content="Die Jahreshauptversammlung findet am 03.02.2024 um 15 Uhr im Schützenhaus statt."
@@ -23,18 +19,20 @@ export function Home() {
                 }}
               />
               </Stack>*/}
-          </Grid>
-          <Grid item xs={12}>
+        <Grid container spacing={2} mt={1}>
+          <Grid item xs={12} md={6} xl={6}>
             <Typography gutterBottom>
-              Herzlich Willkommen auf der Website der Schützengesellschaft
-              Eisenbach 1958 e.V.! Wir freuen uns, dass Sie den Weg zu uns
-              gefunden haben und laden Sie herzlich ein, sich über unseren
-              Verein und unser vielfältiges Angebot zu informieren. Bei uns
-              finden Sie nicht nur ein anspruchsvolles sportliches Programm,
-              sondern auch eine lebendige Gemeinschaft, die das Schießen als
-              Hobby und Leidenschaft teilt. Wir wünschen Ihnen viel Spaß beim
-              Stöbern auf unserer Website und hoffen, Sie bald persönlich bei
-              uns begrüßen zu dürfen!
+              <Typography variant="subtitle1">
+                Herzlich Willkommen auf der Website der Schützengesellschaft
+                Eisenbach 1958 e.V.!
+              </Typography>
+              Wir freuen uns, dass Sie den Weg zu uns gefunden haben und laden
+              Sie herzlich ein, sich über unseren Verein und unser vielfältiges
+              Angebot zu informieren. Bei uns finden Sie nicht nur ein
+              anspruchsvolles sportliches Programm, sondern auch eine lebendige
+              Gemeinschaft, die das Schießen als Hobby und Leidenschaft teilt.
+              Wir wünschen Ihnen viel Spaß beim Stöbern auf unserer Website und
+              hoffen, Sie bald persönlich bei uns begrüßen zu dürfen!
             </Typography>
             <Typography gutterBottom>
               Auf unserer Website finden Sie auch Informationen zu kommenden{" "}
@@ -56,6 +54,9 @@ export function Home() {
               Details informieren. Wir stehen Ihnen gerne für Fragen zur
               Verfügung.
             </Typography>
+          </Grid>
+          <Grid item xs={12} md={6} xl={6}>
+            <CaptionImage src="images/pages/events/2024/first-may-pea-soup/first-may-pea-soup-2024.jpg" />
           </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
