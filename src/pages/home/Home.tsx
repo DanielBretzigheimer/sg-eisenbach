@@ -56,7 +56,7 @@ export function Home() {
             </Typography>
           </Grid>
           <Grid item xs={12} md={6} xl={6}>
-            <CaptionImage src="images/pages/events/2024/first-may-pea-soup/first-may-pea-soup-2024.jpg" />
+            <CaptionImage src="images/pages/events/2024/summer-biathlon/summer-biathlon-2024.jpg" />
           </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
