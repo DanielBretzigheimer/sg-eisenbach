@@ -35,18 +35,8 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Sommerbiathlon</TableCell>
-              <TableCell>07.07.2024</TableCell>
-              <TableCell>ab 11:00 Uhr</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Schießstand auf dem Stadtfest Obernburg</TableCell>
-              <TableCell>04.08.2024</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>Preisschießen</TableCell>
-              <TableCell>29.10. - 26.11.2024</TableCell>
+              <TableCell>15.10. - 12.11.2024</TableCell>
               <TableCell></TableCell>
             </TableRow>
             <TableRow>
@@ -56,12 +46,12 @@ export function Events() {
             </TableRow>
             <TableRow>
               <TableCell>Königsschießen</TableCell>
-              <TableCell>23.11.2024</TableCell>
+              <TableCell>02.11.2024</TableCell>
               <TableCell>15:00 Uhr</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Königsfeier</TableCell>
-              <TableCell>30.11.2024</TableCell>
+              <TableCell>16.11.2024</TableCell>
               <TableCell>19:00 Uhr</TableCell>
             </TableRow>
             <TableRow>
