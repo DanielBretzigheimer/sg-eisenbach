@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom"
-import { Box, Grid, Link, Typography } from "@mui/material"
-import { CaptionImage } from "../../controls/CaptionImage"
-import { RoutePath } from "../../RoutePath"
+import { useNavigate } from "react-router-dom";
+import { Box, Grid, Link, Typography } from "@mui/material";
+import { CaptionImage } from "../../controls/CaptionImage";
+import { RoutePath } from "../../RoutePath";
 
 export function Home() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <>
@@ -20,7 +20,7 @@ export function Home() {
               />
               </Stack>*/}
         <Grid container spacing={2} mt={1}>
-          <Grid item xs={12} md={6} xl={6}>
+          <Grid item xs={12}>
             <Typography gutterBottom>
               <Typography variant="subtitle1">
                 Herzlich Willkommen auf der Website der Schützengesellschaft
@@ -55,9 +55,6 @@ export function Home() {
               Verfügung.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6} xl={6}>
-            <CaptionImage src="images/pages/events/2024/summer-biathlon/summer-biathlon-2024.jpg" />
-          </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
               src="images/pages/home/cover.jpg"
@@ -79,5 +76,5 @@ export function Home() {
         </Grid>
       </Box>
     </>
-  )
+  );
 }
