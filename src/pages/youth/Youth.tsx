@@ -43,24 +43,12 @@ export function Youth() {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell>19.03.2024</TableCell>
-                  <TableCell>Osterschießen</TableCell>
+                  <TableCell>Dezember 2024</TableCell>
+                  <TableCell>Jahresabschlusswanderung</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>23.03.2024</TableCell>
-                  <TableCell>Aktion Saubere Flur</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>April</TableCell>
-                  <TableCell>Vereinsmeisterschaft</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>11.05.2024</TableCell>
-                  <TableCell>Wanderung zum Sophienhof</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Juli</TableCell>
-                  <TableCell>Sommerbiathlon am Schützenhaus</TableCell>
+                  <TableCell>Februar 2025</TableCell>
+                  <TableCell>Schlittschuhlaufen</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -98,7 +86,7 @@ export function Youth() {
         <Grid item xs={6} md={3}>
           <CaptionImage
             src="images/pages/youth/youth-leader-2.jpg"
-            label="Jens Kürten"
+            label="Willi Korn"
           />
         </Grid>
       </Grid>

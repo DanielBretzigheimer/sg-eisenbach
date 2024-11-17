@@ -35,26 +35,6 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Preisschießen</TableCell>
-              <TableCell>15.10. - 12.11.2024</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Schießstand auf der Kerb in Eisenbach</TableCell>
-              <TableCell>29.09.2024</TableCell>
-              <TableCell></TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Königsschießen</TableCell>
-              <TableCell>02.11.2024</TableCell>
-              <TableCell>15:00 Uhr</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Königsfeier</TableCell>
-              <TableCell>16.11.2024</TableCell>
-              <TableCell>19:00 Uhr</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>Neujahrsschießen</TableCell>
               <TableCell>01.01.2025</TableCell>
               <TableCell></TableCell>
@@ -72,6 +52,18 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
+          <ListItem>
+            <ListItemText primary="Königsfeier 2024" />
+          </ListItem>
+          <ListItem>
+            <ListItemText primary="Kerb 2024" />
+          </ListItem>
+          <ListItem>
+            <ListItemText primary="Sommerbiathlon 2024" />
+          </ListItem>
+          <ListItem>
+            <ListItemText primary="Stadtfest 2024" />
+          </ListItem>
           <ListItemButton
             onClick={() =>
               navigate(`/${RoutePath.Events}/2024/new-years-shooting`)
