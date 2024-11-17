@@ -31,7 +31,7 @@ export function Club() {
           king: "Manuel Schott",
           firstKnight: "Sandra Schott",
           secondKnight: "Helmut Berninger",
-          robinHood: "Franz",
+          robinHood: "Franz Stöberl",
         }}
         youth={{
           king: "Oskar Schlett",
