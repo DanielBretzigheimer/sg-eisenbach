@@ -6,13 +6,14 @@ export function AirRifleThree() {
       title="Luftgewehr 3"
       members={[
         {
-          name: "Angela Hepp",
+          name: "Karl-Heinz Raguse",
           isLeader: true,
         },
-        { name: "Manuel Schott" },
-        { name: "Julian Vogl" },
+        { name: "Urban Weiß" },
+        { name: "Helmut Berninger" },
+        { name: "Wolfgang Heß" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=53&sel_discipline_id=6&sel_class_id=2&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=61&sel_discipline_id=6&sel_class_id=34&showCombined=0"
     />
   )
 }

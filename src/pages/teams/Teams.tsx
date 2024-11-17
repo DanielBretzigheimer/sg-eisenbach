@@ -82,7 +82,7 @@ export function Teams() {
           </ListItemButton>
         </List>
       </TeamCategory>
-      <TeamCategory imageSrc="images/pages/teams/bow.png" title="Bogen">
+      {/*<TeamCategory imageSrc="images/pages/teams/bow.png" title="Bogen">
         <List>
           <ListItemButton
             onClick={() => navigate(`/${RoutePath.Teams}/bogen-1`)}
@@ -90,7 +90,7 @@ export function Teams() {
             <ListItemText>Bogen 1</ListItemText>
           </ListItemButton>
         </List>
-      </TeamCategory>
+      </TeamCategory>*/}
     </Grid>
   )
 }

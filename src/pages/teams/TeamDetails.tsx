@@ -18,7 +18,7 @@ export function TeamDetails(props: TeamDetailProps) {
         {props.title}
       </Typography>
       {props.members.map((member) => (
-        <Typography gutterBottom>
+        <Typography key={member.name} gutterBottom>
           {member.name}
           {member.isLeader && " (MF)"}
         </Typography>

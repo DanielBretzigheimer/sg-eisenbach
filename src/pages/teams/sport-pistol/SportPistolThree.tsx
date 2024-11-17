@@ -10,11 +10,10 @@ export function SportPistolThree() {
           isLeader: true,
         },
         { name: "Werner Berger" },
-        { name: "Martin Sam" },
         { name: "Frank Sam" },
-        { name: "Yasmine Sam" },
+        { name: "Tatjana Chaney" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=51&sel_discipline_id=8&sel_class_id=19"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=63&sel_discipline_id=8&sel_class_id=18&showCombined=0"
     />
   )
 }
