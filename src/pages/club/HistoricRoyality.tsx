@@ -5,6 +5,25 @@ export function HistoricRoyality() {
   return (
     <Grid container mt={2} spacing={2}>
       <Royality
+        year="2023"
+        image={{
+          src: "images/pages/events/2023/royal-shooting/royal-family.jpg",
+          caption:
+            "v.l.n.r: Manuel Schott, Frank Sam, Jaroslav Rücker, Norber Börner, Wolfgang Heß vorne: Oskar Schlett, Maksim Kaiser, Henri Graf",
+        }}
+        adult={{
+          king: "Jaroslav Rücker",
+          firstKnight: "Frank Sam",
+          secondKnight: "Norber Börner",
+          robinHood: "Karl-Heinz Muschik",
+        }}
+        youth={{
+          king: "Maksim Kaiser",
+          firstKnight: "Oskar Schlett",
+          secondKnight: "Henri Graf",
+        }}
+      />
+      <Royality
         year="2022"
         image={{
           src: "images/pages/events/2022/royal-shooting/royal-family.jpg",
