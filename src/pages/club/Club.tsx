@@ -26,6 +26,11 @@ export function Club() {
         </Stack>
       </Grid>
       <Royality
+        image={{
+          src: "images/pages/events/2024/royal-shooting/royal-family.jpg",
+          caption:
+            "v. Links: 1 .SM W. Heß, 2. Ritter H. Berninger,  1. Jugendritter P. Parsch, König M. Schott, 1. Ritter S. Schott, Jugendleiter D. Bretzigheimer, 2. Jugendritter A. Graf, Robin Hood F. Stöberl, Jugendkönig O. Schlett",
+        }}
         year="2024"
         adult={{
           king: "Manuel Schott",

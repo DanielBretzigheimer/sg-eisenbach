@@ -52,9 +52,11 @@ export function Events() {
           <Typography variant="h5">Vergangene Veranstaltungen</Typography>
         </CardContent>
         <List>
-          <ListItem>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Events}/2024/royal-shooting`)}
+          >
             <ListItemText primary="Königsfeier 2024" />
-          </ListItem>
+          </ListItemButton>
           <ListItem>
             <ListItemText primary="Kerb 2024" />
           </ListItem>
