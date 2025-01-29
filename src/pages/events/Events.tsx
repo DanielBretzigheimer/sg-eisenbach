@@ -35,14 +35,19 @@ export function Events() {
           </TableHead>
           <TableBody>
             <TableRow>
-              <TableCell>Neujahrsschießen</TableCell>
-              <TableCell>01.01.2025</TableCell>
-              <TableCell></TableCell>
+              <TableCell>Jahreshauptversammlung</TableCell>
+              <TableCell>08.02.2025</TableCell>
+              <TableCell>15:00 Uhr</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Jahreshauptversammlung</TableCell>
-              <TableCell>01.02.2025</TableCell>
-              <TableCell>15:00 Uhr</TableCell>
+              <TableCell>Maifeier</TableCell>
+              <TableCell>01.05.2025</TableCell>
+              <TableCell>11:00 Uhr</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Sommerbiathlon</TableCell>
+              <TableCell>29.06.2025</TableCell>
+              <TableCell>11:00 Uhr</TableCell>
             </TableRow>
           </TableBody>
         </Table>
