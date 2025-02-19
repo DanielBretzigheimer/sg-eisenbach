@@ -67,7 +67,7 @@ export default function Contact() {
             </CardActionArea>
             <CardContent>
               <Typography variant="h5">Telefon</Typography>
-              <Link href="tel:+49 6022 38859">+49 6022 38859</Link>
+              <Link href="tel:+49 151 54622550">+49 151 54622550</Link>
             </CardContent>
             <CardContent>
               <Typography variant="h5">E-Mail</Typography>
