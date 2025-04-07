@@ -1,24 +1,27 @@
-import { useNavigate } from "react-router-dom";
-import { Box, Grid, Link, Typography } from "@mui/material";
-import { CaptionImage } from "../../controls/CaptionImage";
-import { RoutePath } from "../../RoutePath";
+import { useNavigate } from "react-router-dom"
+import { Box, Grid, Link, Stack, Typography } from "@mui/material"
+import { CaptionImage } from "../../controls/CaptionImage"
+import { RoutePath } from "../../RoutePath"
+import { HomeAlert } from "./HomeAlert"
 
 export function Home() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
       <Box mt={2}>
-        {/*<Stack gap={1}>
-              <HomeAlert
-                title="Jahreshauptversammlung"
-                content="Die Jahreshauptversammlung findet am 03.02.2024 um 15 Uhr im Schützenhaus statt."
-                action={{
-                  text: "mehr Infos",
-                  target: `/${RoutePath.Events}/2024/general-meeting`,
-                }}
-              />
-              </Stack>*/}
+        {
+          <Stack gap={1}>
+            <HomeAlert
+              title="Maifest"
+              content="Unsere traditionelles Erbsensuppenessen findet am 01.05.2024 ab 11 Uhr am Schützenhaus statt."
+              action={{
+                text: "mehr Infos",
+                target: "first-may-celebration",
+              }}
+            />
+          </Stack>
+        }
         <Grid container spacing={2} mt={1}>
           <Grid item xs={12}>
             <Typography gutterBottom>
@@ -55,6 +58,12 @@ export function Home() {
               Verfügung.
             </Typography>
           </Grid>
+          <Grid item xs={12} md={6} xl={6}>
+            <CaptionImage
+              id="first-may-celebration"
+              src="images/pages/events/2025/first-may-celebration/first-may-celebration-2025.jpg"
+            />
+          </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage
               src="images/pages/home/cover.jpg"
@@ -76,5 +85,5 @@ export function Home() {
         </Grid>
       </Box>
     </>
-  );
+  )
 }
