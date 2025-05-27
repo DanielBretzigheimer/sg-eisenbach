@@ -13,17 +13,17 @@ export function Home() {
         {
           <Stack gap={1}>
             <HomeAlert
-              title="Maifest"
-              content="Unsere traditionelles Erbsensuppenessen findet am 01.05.2024 ab 11 Uhr am Schützenhaus statt."
+              title="Sommerbiathlon"
+              content="Am 29. Juni 2025 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
               action={{
                 text: "mehr Infos",
-                target: "first-may-celebration",
+                target: "summer-biathlon",
               }}
             />
           </Stack>
         }
         <Grid container spacing={2} mt={1}>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={6} xl={6}>
             <Typography gutterBottom>
               <Typography variant="subtitle1">
                 Herzlich Willkommen auf der Website der Schützengesellschaft
@@ -60,8 +60,8 @@ export function Home() {
           </Grid>
           <Grid item xs={12} md={6} xl={6}>
             <CaptionImage
-              id="first-may-celebration"
-              src="images/pages/events/2025/first-may-celebration/first-may-celebration-2025.jpg"
+              id="summer-biathlon"
+              src="images/pages/events/2025/summer-biathlon/summer-biathlon-2025.jpeg"
             />
           </Grid>
           <Grid item xs={12} md={6}>
