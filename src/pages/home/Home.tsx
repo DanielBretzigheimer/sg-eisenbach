@@ -10,7 +10,7 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
-        {
+        {/*
           <Stack gap={1}>
             <HomeAlert
               title="Sommerbiathlon"
@@ -21,7 +21,7 @@ export function Home() {
               }}
             />
           </Stack>
-        }
+        */}
         <Grid container spacing={2} mt={1}>
           <Grid item xs={12} md={6} xl={6}>
             <Typography gutterBottom>
@@ -57,12 +57,6 @@ export function Home() {
               Details informieren. Wir stehen Ihnen gerne für Fragen zur
               Verfügung.
             </Typography>
-          </Grid>
-          <Grid item xs={12} md={6} xl={6}>
-            <CaptionImage
-              id="summer-biathlon"
-              src="images/pages/events/2025/summer-biathlon/summer-biathlon-2025.jpeg"
-            />
           </Grid>
           <Grid item xs={12} md={6}>
             <CaptionImage

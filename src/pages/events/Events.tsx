@@ -16,8 +16,16 @@ import {
 } from "@mui/material"
 import { RoutePath } from "../../RoutePath"
 
+type Event = {
+  title: string
+  date: string
+  time: string
+}
+
 export function Events() {
   const navigate = useNavigate()
+
+  const events: Event[] = []
 
   return (
     <Box mt={2}>
@@ -34,21 +42,20 @@ export function Events() {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
-              <TableCell>Jahreshauptversammlung</TableCell>
-              <TableCell>08.02.2025</TableCell>
-              <TableCell>15:00 Uhr</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Maifeier</TableCell>
-              <TableCell>01.05.2025</TableCell>
-              <TableCell>11:00 Uhr</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Sommerbiathlon</TableCell>
-              <TableCell>29.06.2025</TableCell>
-              <TableCell>11:00 Uhr</TableCell>
-            </TableRow>
+            {events.map((e) => (
+              <TableRow key={e.title}>
+                <TableCell>{e.title}</TableCell>
+                <TableCell>{e.date}</TableCell>
+                <TableCell>{e.time}</TableCell>
+              </TableRow>
+            ))}
+            {events.length === 0 && (
+              <TableRow>
+                <TableCell colSpan={3} align="center">
+                  Keine Einträge vorhanden
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </Card>

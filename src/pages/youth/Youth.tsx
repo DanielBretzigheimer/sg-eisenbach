@@ -2,7 +2,6 @@ import {
   Card,
   CardContent,
   Grid,
-  Link,
   Table,
   TableBody,
   TableCell,
@@ -11,7 +10,19 @@ import {
 } from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 
+type Event = {
+  title: string
+  date: string
+}
+
 export function Youth() {
+  const events: Event[] = [
+    {
+      title: "Jahresabschlusswanderung",
+      date: "Dezember/Januar",
+    },
+  ]
+
   return (
     <>
       <Grid container spacing={2} mt={1} mb={2}>
@@ -42,14 +53,12 @@ export function Youth() {
             </CardContent>
             <Table>
               <TableBody>
-                <TableRow>
-                  <TableCell>Dezember 2024</TableCell>
-                  <TableCell>Jahresabschlusswanderung</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Februar 2025</TableCell>
-                  <TableCell>Schlittschuhlaufen</TableCell>
-                </TableRow>
+                {events.map((e) => (
+                  <TableRow key={e.title}>
+                    <TableCell>{e.date}</TableCell>
+                    <TableCell>{e.title}</TableCell>
+                  </TableRow>
+                ))}
               </TableBody>
             </Table>
           </Card>
