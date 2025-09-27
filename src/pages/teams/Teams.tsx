@@ -1,9 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import {
   Grid,
-  Link,
   List,
-  ListItem,
   ListItemButton,
   ListItemText,
   Typography,
@@ -79,6 +77,23 @@ export function Teams() {
             onClick={() => navigate(`/${RoutePath.Teams}/sportpistole-3`)}
           >
             <ListItemText>Sportpistole 3</ListItemText>
+          </ListItemButton>
+        </List>
+      </TeamCategory>
+      <TeamCategory
+        imageSrc="images/pages/teams/9mm.png"
+        title="Gebrauchspistole"
+      >
+        <List>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/gebrauchspistole-1`)}
+          >
+            <ListItemText>Gebrauchspistole 1</ListItemText>
+          </ListItemButton>
+          <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Teams}/gebrauchspistole-2`)}
+          >
+            <ListItemText>Gebrauchspistole 2</ListItemText>
           </ListItemButton>
         </List>
       </TeamCategory>

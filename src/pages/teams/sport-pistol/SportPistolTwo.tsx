@@ -10,10 +10,11 @@ export function SportPistolTwo() {
           isLeader: true,
         },
         { name: "Andreas Dörsch" },
-        { name: "Marcel Sator" },
         { name: "Fabian Vad" },
+        { name: "Marcel Sator" },
+        { name: "Manuel Schott" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=63&sel_discipline_id=8&sel_class_id=18&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=68&sel_discipline_id=8&sel_class_id=18&showCombined=0"
     />
   )
 }

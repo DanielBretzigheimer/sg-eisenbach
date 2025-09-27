@@ -13,7 +13,7 @@ export function AirRifleOne() {
         { name: "Hannah Kloos" },
         { name: "Daniel Bretzigheimer" },
       ]}
-      resultLink="https://rwk-onlinemelder.de/online/listen/800?sel_group_id=39&sel_discipline_id=1&sel_class_id=3&showCombined=0"
+      resultLink="https://rwk-onlinemelder.de/online/listen/800?sel_group_id=42&sel_discipline_id=1&sel_class_id=3&showCombined=0"
     />
   )
 }

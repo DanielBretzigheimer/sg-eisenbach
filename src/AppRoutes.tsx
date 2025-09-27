@@ -35,6 +35,8 @@ import { RoyalShooting2023 } from "./pages/events/2023/RoyalShooting2023"
 import { NewYearsShooting2024 } from "./pages/events/2024/NewYearsShooting2024"
 import { GeneralMeeting2024 } from "./pages/events/2024/GeneralMeeting2024"
 import { RoyalShooting2024 } from "./pages/events/2024/RoyalShooting2024"
+import { NineMMOne } from "./pages/teams/9mm/NineMMOne"
+import { NineMMTwo } from "./pages/teams/9mm/NineMMTwo"
 
 export function AppRoutes() {
   return (
@@ -114,6 +116,14 @@ export function AppRoutes() {
       <Route
         path={`/${RoutePath.Teams}/sportpistole-3`}
         element={<SportPistolThree />}
+      />
+      <Route
+        path={`/${RoutePath.Teams}/gebrauchspistole-1`}
+        element={<NineMMOne />}
+      />
+      <Route
+        path={`/${RoutePath.Teams}/gebrauchspistole-2`}
+        element={<NineMMTwo />}
       />
       <Route
         path={`/${RoutePath.ShootingRanges}`}

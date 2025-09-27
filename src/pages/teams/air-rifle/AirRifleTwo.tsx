@@ -14,7 +14,7 @@ export function AirRifleTwo() {
         { name: "Aaron Korn" },
         { name: "Julian Vogl" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=61&sel_discipline_id=6&sel_class_id=2&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=66&sel_discipline_id=6&sel_class_id=2&showCombined=0"
     />
   )
 }

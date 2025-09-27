@@ -9,12 +9,12 @@ export function AirPistolOne() {
           name: "Michael Berger",
           isLeader: true,
         },
+        { name: "Emin Acig" },
         { name: "Mathias Pollak" },
         { name: "Jenny Guthermuth" },
-        { name: "Emin Acig" },
-        { name: "Werner Berger" },
+        { name: "Sandra Schott" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=62&sel_discipline_id=2&sel_class_id=11&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=67&sel_discipline_id=2&sel_class_id=11&showCombined=0"
     />
   )
 }

@@ -9,11 +9,11 @@ export function SportPistolThree() {
           name: "Ludwig Becker",
           isLeader: true,
         },
-        { name: "Werner Berger" },
+        { name: "Martin Sam" },
         { name: "Frank Sam" },
-        { name: "Tatjana Chaney" },
+        { name: "Florian Scheurich" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=63&sel_discipline_id=8&sel_class_id=18&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=68&sel_discipline_id=8&sel_class_id=18&showCombined=0"
     />
   )
 }

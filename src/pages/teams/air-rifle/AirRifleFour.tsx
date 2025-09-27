@@ -14,7 +14,7 @@ export function AirRifleFour() {
         { name: "Sophia Gräber" },
         { name: "Sophie-Marie Kaiser" },
       ]}
-      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=53&sel_discipline_id=6&sel_class_id=34&showCombined=0"
+      resultLink="https://www.rwk-onlinemelder.de/online/listen/803?sel_group_id=66&sel_discipline_id=6&sel_class_id=53&showCombined=0"
     />
   )
 }
