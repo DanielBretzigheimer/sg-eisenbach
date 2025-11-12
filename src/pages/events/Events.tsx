@@ -25,7 +25,18 @@ type Event = {
 export function Events() {
   const navigate = useNavigate()
 
-  const events: Event[] = []
+  const events: Event[] = [
+    {
+      title: "Königsschießen",
+      date: "22.11.2025",
+      time: "",
+    },
+    {
+      title: "Königsfeier",
+      date: "29.11.2025",
+      time: "",
+    },
+  ]
 
   return (
     <Box mt={2}>
