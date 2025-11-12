@@ -29,12 +29,12 @@ export function Events() {
     {
       title: "Königsschießen",
       date: "22.11.2025",
-      time: "",
+      time: "ab 14 Uhr",
     },
     {
       title: "Königsfeier",
       date: "29.11.2025",
-      time: "",
+      time: "ab 19 Uhr",
     },
   ]
 
