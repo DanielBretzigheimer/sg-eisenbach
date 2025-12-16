@@ -27,14 +27,9 @@ export function Events() {
 
   const events: Event[] = [
     {
-      title: "Königsschießen",
-      date: "22.11.2025",
-      time: "ab 14 Uhr",
-    },
-    {
-      title: "Königsfeier",
-      date: "29.11.2025",
-      time: "ab 19 Uhr",
+      title: "Jahreshauptversammlung",
+      date: "07.02.2026",
+      time: "15:00 Uhr",
     },
   ]
 
