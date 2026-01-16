@@ -1,20 +1,12 @@
 import React from 'react';
 
-const Youth = () => {
-  return (
-    <div>
-      <h1>Jugend Termine</h1>
-      <ul>
-        <li>JVS* in Sulzbach</li>
-        <li>JVS* in Eisenbach</li>
-        <li>JVS*</li>
-        <li>Finale JVS* in Miltenberg</li>
-      </ul>
-      <footer>
-        <p>* = Jugend Vergleich Schießen</p>
-      </footer>
-    </div>
-  );
-};
-
-export default Youth;
+export function Youth() {
+    return (
+        <div>
+            <h1>JVS* in Sulzbach</h1>
+            <h1>JVS* in Eisenbach</h1>
+            <h1>JVS*</h1>
+            <h1>Finale JVS* in Miltenberg</h1>
+        </div>
+    );
+}
