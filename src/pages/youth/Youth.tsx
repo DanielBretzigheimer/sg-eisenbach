@@ -45,10 +45,6 @@ export function Youth() {
       title: "Finale JVS* in Miltenberg",
       date: "20.05.2026",
     },
-    {
-      title: "Jahresabschlusswanderung",
-      date: "Dezember/Januar",
-    },
   ]
 
   return (
