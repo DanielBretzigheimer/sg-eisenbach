@@ -87,13 +87,15 @@ export function Youth() {
                     <TableCell>{e.title}</TableCell>
                   </TableRow>
                 ))}
+                <TableRow>
+                  <TableCell colSpan={2}>
+                    <Typography variant="caption">
+                      * = Jugend Vergleich Schießen
+                    </Typography>
+                  </TableCell>
+                </TableRow>
               </TableBody>
             </Table>
-            <CardContent>
-              <Typography variant="caption">
-                * = Jugend Vergleich Schießen
-              </Typography>
-            </CardContent>
           </Card>
         </Grid>
         <Grid item xs={6} md={3}>
