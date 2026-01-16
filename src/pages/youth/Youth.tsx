@@ -18,8 +18,32 @@ type Event = {
 export function Youth() {
   const events: Event[] = [
     {
-      title: "Jahresabschlusswanderung",
-      date: "Dezember/Januar",
+      title: "Wanderung zum Dönerjosef",
+      date: "24.01.2026",
+    },
+    {
+      title: "Jahreshauptversammlung",
+      date: "07.02.2026",
+    },
+    {
+      title: "JVS* in Sulzbach",
+      date: "15.04.2026",
+    },
+    {
+      title: "Bezirksmeisterschaft Jugend",
+      date: "18.04.2026",
+    },
+    {
+      title: "JVS* in Eisenbach",
+      date: "22.04.2026",
+    },
+    {
+      title: "JVS*",
+      date: "29.04.2026",
+    },
+    {
+      title: "Finale JVS* in Miltenberg",
+      date: "20.05.2026",
     },
   ]
 
@@ -59,6 +83,13 @@ export function Youth() {
                     <TableCell>{e.title}</TableCell>
                   </TableRow>
                 ))}
+                <TableRow>
+                  <TableCell colSpan={2}>
+                    <Typography variant="caption">
+                      * = Jugend Vergleich Schießen
+                    </Typography>
+                  </TableCell>
+                </TableRow>
               </TableBody>
             </Table>
           </Card>
