@@ -1,5 +1,4 @@
 import React from 'react';
-import { Appointment } from '../components/Appointment';
 
 const Youth = () => {
     return (
@@ -9,7 +8,6 @@ const Youth = () => {
                 <li>JVS*</li>
                 <li>Finale JVS in Miltenberg*</li>
             </ul>
-            <Appointment />
             <p>For more information, please refer to the footnotes.</p>
         </div>
     );
