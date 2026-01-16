@@ -1,4 +1,5 @@
 import {
+  Box,
   Card,
   CardContent,
   Grid,
@@ -89,11 +90,11 @@ export function Youth() {
                 ))}
               </TableBody>
             </Table>
-            <CardContent>
+            <Box sx={{ p: 2 }}>
               <Typography variant="caption" sx={{ fontSize: '0.75rem' }}>
                 * = Jugend Vergleich Schießen
               </Typography>
-            </CardContent>
+            </Box>
           </Card>
         </Grid>
         <Grid item xs={6} md={3}>
