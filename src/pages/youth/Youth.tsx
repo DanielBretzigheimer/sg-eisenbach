@@ -45,6 +45,10 @@ export function Youth() {
       title: "Finale JVS* in Miltenberg",
       date: "20.05.2026",
     },
+    {
+      title: "100-Jahrfeier Schützenverein Oberwinden",
+      date: "10.07.2026 - 12.07.2026",
+    },
   ]
 
   return (

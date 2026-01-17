@@ -31,6 +31,11 @@ export function Events() {
       date: "07.02.2026",
       time: "15:00 Uhr",
     },
+    {
+      title: "100-Jahrfeier Schützenverein Oberwinden",
+      date: "10.07.2026 - 12.07.2026",
+      time: "mehrtägig",
+    },
   ]
 
   return (
