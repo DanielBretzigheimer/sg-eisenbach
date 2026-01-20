@@ -49,17 +49,17 @@ export function Events() {
     {
       title: "Gaukönigsball",
       date: "07.11.2026",
-      time: "",
+      time: "wird bekannt gegeben",
     },
     {
       title: "Königsschießen",
       date: "21.11.2026",
-      time: "",
+      time: "wird bekannt gegeben",
     },
     {
       title: "Königsfeier",
       date: "28.11.2026",
-      time: "",
+      time: "wird bekannt gegeben",
     },
   ]
 
