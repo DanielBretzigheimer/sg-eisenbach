@@ -32,9 +32,34 @@ export function Events() {
       time: "15:00 Uhr",
     },
     {
+      title: "Erbsensuppenessen am Schützenhaus mit Schnupperschießen",
+      date: "01.05.2026",
+      time: "ab 11:00 Uhr",
+    },
+    {
+      title: "Gaupokalschießen",
+      date: "05.05.2026 - 22.05.2026",
+      time: "mehrtägig",
+    },
+    {
       title: "100-Jahrfeier Schützenverein Oberwinden",
       date: "10.07.2026 - 12.07.2026",
       time: "mehrtägig",
+    },
+    {
+      title: "Gaukönigsball",
+      date: "07.11.2026",
+      time: "",
+    },
+    {
+      title: "Königsschießen",
+      date: "21.11.2026",
+      time: "",
+    },
+    {
+      title: "Königsfeier",
+      date: "28.11.2026",
+      time: "",
     },
   ]
 
