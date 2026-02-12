@@ -1,10 +1,10 @@
-import { useNavigate } from "react-router-dom"
-import { Grid, Link, Stack, Typography } from "@mui/material"
-import { RoutePath } from "../../RoutePath"
-import { Royality } from "./Royality"
+import { useNavigate } from "react-router-dom";
+import { Grid, Link, Stack, Typography } from "@mui/material";
+import { RoutePath } from "../../RoutePath";
+import { Royality } from "./Royality";
 
 export function Club() {
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   return (
     <Grid container spacing={2}>
@@ -27,7 +27,7 @@ export function Club() {
           caption:
             "v. Links: 1 .SM W. Heß, 2. Ritter C. Otterstedt,  Königin A. Pamp-Janson, 1. Ritter A. Hepp, 2. Jugendritter S. Horlebein, Jugendkönig N. Berger, 1. Jugendritter A. Graf",
         }}
-        year="2024"
+        year="2025"
         adult={{
           king: "Anke Pamp Janson",
           firstKnight: "Angela Hepp",
