@@ -5,6 +5,25 @@ export function HistoricRoyality() {
   return (
     <Grid container mt={2} spacing={2}>
       <Royality
+        year="2024"
+        image={{
+          src: "images/pages/events/2024/royal-shooting/royal-family.jpg",
+          caption:
+            "v. Links: 1 .SM W. Heß, 2. Ritter H. Berninger, 1. Jugendritter P. Parsch, König M. Schott, 1. Ritter S. Schott, Jugendleiter D. Bretzigheimer, 2. Jugendritter A. Graf, Robin Hood F. Stöberl, Jugendkönig O. Schlett",
+        }}
+        adult={{
+          king: "Manuel Schott",
+          firstKnight: "Sandra Schott",
+          secondKnight: "Helmut Berninger",
+          robinHood: "Franz Stöberl",
+        }}
+        youth={{
+          king: "Oskar Schlett",
+          firstKnight: "Paul Parsch",
+          secondKnight: "Amelie Graf",
+        }}
+      />
+      <Royality
         year="2023"
         image={{
           src: "images/pages/events/2023/royal-shooting/royal-family.jpg",
