@@ -15,40 +15,33 @@ export function Club() {
             Satzung
           </Link>
           <Link onClick={() => nav(`/${RoutePath.Club}/join`)}>Aufnahme</Link>
-          <Link
-            onClick={() => nav(`/${RoutePath.Club}/prize-and-king-shooting`)}
-          >
+          <Link onClick={() => nav(`/${RoutePath.Club}/prize-and-king-shooting`)}>
             Preis- und Königsschießen
           </Link>
-          <Link onClick={() => nav(`/${RoutePath.Club}/timeline`)}>
-            Chronik
-          </Link>
+          <Link onClick={() => nav(`/${RoutePath.Club}/timeline`)}>Chronik</Link>
         </Stack>
       </Grid>
       <Royality
         image={{
-          src: "images/pages/events/2024/royal-shooting/royal-family.jpg",
+          src: "images/pages/events/2025/royal-shooting/royal-family.jpg",
           caption:
-            "v. Links: 1 .SM W. Heß, 2. Ritter H. Berninger,  1. Jugendritter P. Parsch, König M. Schott, 1. Ritter S. Schott, Jugendleiter D. Bretzigheimer, 2. Jugendritter A. Graf, Robin Hood F. Stöberl, Jugendkönig O. Schlett",
+            "v. Links: 1 .SM W. Heß, 2. Ritter C. Otterstedt,  Königin A. Pamp-Janson, 1. Ritter A. Hepp, 2. Jugendritter S. Horlebein, Jugendkönig N. Berger, 1. Jugendritter A. Graf",
         }}
         year="2024"
         adult={{
-          king: "Manuel Schott",
-          firstKnight: "Sandra Schott",
-          secondKnight: "Helmut Berninger",
-          robinHood: "Franz Stöberl",
+          king: "Anke Pamp Janson",
+          firstKnight: "Angela Hepp",
+          secondKnight: "Christian Otterstedt",
         }}
         youth={{
-          king: "Oskar Schlett",
-          firstKnight: "Paul Parsch",
-          secondKnight: "Amelie Graf",
+          king: "Nilo Berger",
+          firstKnight: "Amelie Graf",
+          secondKnight: "Sophie Horlebein",
         }}
       />
       <Grid item xs={12}>
-        <Link onClick={() => nav(`/${RoutePath.Club}/historic-royality`)}>
-          Vergangene Könige
-        </Link>
+        <Link onClick={() => nav(`/${RoutePath.Club}/historic-royality`)}>Vergangene Könige</Link>
       </Grid>
     </Grid>
-  )
+  );
 }
