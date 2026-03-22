@@ -10,7 +10,7 @@ export function Imprint() {
         <br />
         Daniel Bretzigheimer
         <br />
-        Bergstraße 26
+        Deckelmannstraße 2 B
         <br />
         63785 Obernburg am Main
         <br />
