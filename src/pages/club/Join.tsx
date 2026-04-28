@@ -13,7 +13,7 @@ export function Join() {
             <Typography>Junioren (18 - 20 Jahre) 20,- €</Typography>
           </li>
           <li>
-            <Typography>Erwachsene (ab 21 Jahren) 39,- €</Typography>
+            <Typography>Erwachsene (ab 21 Jahren) 50,- €</Typography>
           </li>
         </ul>
       </Grid>
