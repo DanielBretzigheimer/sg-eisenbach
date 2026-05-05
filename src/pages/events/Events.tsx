@@ -42,6 +42,11 @@ export function Events() {
       time: "mehrtägig",
     },
     {
+      title: "Sommerbiathlon",
+      date: "28.06.2026",
+      time: "11:00 Uhr",
+    },
+    {
       title: "100-Jahrfeier Schützenverein Oberwinden",
       date: "10.07.2026 - 12.07.2026",
       time: "mehrtägig",
