@@ -10,19 +10,24 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
-        {/*
-          <Stack gap={1}>
-            <HomeAlert
-              title="Sommerbiathlon"
-              content="Am 29. Juni 2025 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
-              action={{
-                text: "mehr Infos",
-                target: "summer-biathlon",
-              }}
-            />
-          </Stack>
-        */}
+        <Stack gap={1}>
+          <HomeAlert
+            title="Sommerbiathlon"
+            content="Am 28. Juni 2026 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
+            action={{
+              text: "Zum Plakat",
+              target: "summer-biathlon",
+            }}
+          />
+        </Stack>
         <Grid container spacing={2} mt={1}>
+          <Grid item xs={12} md={6}>
+            <CaptionImage
+              id="summer-biathlon"
+              src="https://github.com/user-attachments/assets/8f3972aa-0410-4bec-af4a-e378f6f53ec7"
+              label="17. Sommerbiathlon"
+            />
+          </Grid>
           <Grid item xs={12} md={6} xl={6}>
             <Typography gutterBottom>
               <Typography variant="subtitle1">
