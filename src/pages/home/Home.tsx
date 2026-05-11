@@ -15,15 +15,15 @@ export function Home() {
             title="Sommerbiathlon"
             content="Am 28. Juni 2026 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
             action={{
-              text: "Infos & Anmeldung",
-              target:
-                "https://drive.google.com/file/d/1MB8ASPrlxrfadcfcz150IeEqDyynY4_9/view?usp=share_link",
+              text: "Zum Plakat",
+              target: "summer-biathlon",
             }}
           />
         </Stack>
         <Grid container spacing={2} mt={1}>
           <Grid item xs={12} md={6}>
             <CaptionImage
+              id="summer-biathlon"
               src="https://github.com/user-attachments/assets/8f3972aa-0410-4bec-af4a-e378f6f53ec7"
               label="17. Sommerbiathlon"
             />
