@@ -16,19 +16,28 @@ type HomeAlertProps = {
 export function HomeAlert(props: HomeAlertProps) {
   const navigate = useNavigate()
 
+  function handleAction() {
+    if (
+      props.action.target.startsWith("http://") ||
+      props.action.target.startsWith("https://")
+    ) {
+      window.open(props.action.target, "_blank", "noopener,noreferrer")
+      return
+    }
+
+    if (props.action.target.startsWith("/")) {
+      navigate(props.action.target)
+      return
+    }
+
+    document.getElementById(props.action.target)?.scrollIntoView()
+  }
+
   return (
     <Alert
       severity="info"
       action={
-        <Button
-          color="inherit"
-          size="small"
-          onClick={() =>
-            props.action.target.includes("/")
-              ? navigate(props.action.target)
-              : document.getElementById(props.action.target).scrollIntoView()
-          }
-        >
+        <Button color="inherit" size="small" onClick={handleAction}>
           {props.action.text}
         </Button>
       }
