@@ -24,9 +24,11 @@ export function HomeAlert(props: HomeAlertProps) {
           color="inherit"
           size="small"
           onClick={() =>
-            props.action.target.includes("/")
+            props.action.target.startsWith("/")
               ? navigate(props.action.target)
-              : document.getElementById(props.action.target)?.scrollIntoView()
+              : document
+                  .getElementById(props.action.target)
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
           }
         >
           {props.action.text}
