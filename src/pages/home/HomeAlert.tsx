@@ -7,7 +7,7 @@ type HomeAlertProps = {
   action: {
     text: string
     /**
-     * May be a route path or an element id.
+     * May be a route path, an element id, or an external url.
      */
     target: string
   }
@@ -23,13 +23,21 @@ export function HomeAlert(props: HomeAlertProps) {
         <Button
           color="inherit"
           size="small"
-          onClick={() =>
-            props.action.target.startsWith("/")
-              ? navigate(props.action.target)
-              : document
-                  .getElementById(props.action.target)
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
+          onClick={() => {
+            if (props.action.target.startsWith("http")) {
+              window.open(props.action.target, "_blank", "noopener,noreferrer")
+              return
+            }
+
+            if (props.action.target.startsWith("/")) {
+              navigate(props.action.target)
+              return
+            }
+
+            document
+              .getElementById(props.action.target)
+              ?.scrollIntoView({ behavior: "smooth", block: "start" })
+          }}
         >
           {props.action.text}
         </Button>
