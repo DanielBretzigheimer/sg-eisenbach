@@ -15,8 +15,9 @@ export function Home() {
             title="Sommerbiathlon"
             content="Am 28. Juni 2026 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
             action={{
-              text: "Zum Plakat",
-              target: "summer-biathlon",
+              text: "Zur Ausschreibung",
+              target:
+                "https://drive.google.com/file/d/1CReytVE04f0ZOnsM-uoGUi8ASU4On4ri/view?usp=sharing",
             }}
           />
         </Stack>
