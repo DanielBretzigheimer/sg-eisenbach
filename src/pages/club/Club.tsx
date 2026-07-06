@@ -11,7 +11,7 @@ export function Club() {
       <Grid item xs={12}>
         <Typography variant="h2">Verein</Typography>
         <Stack direction="row" gap={1} mb={2}>
-          <Link href="https://drive.google.com/file/d/0B38NBwtZxVHwOXZYX3JJS19qQVBIVlNwbzNmNDVwS2pEaUNF/view?resourcekey=0-4FCDdGqa-KDMMfCs1pWDRQ">
+          <Link href="https://drive.google.com/file/d/1L8Xey6sd0iMmhM-MS_iOEmnOjOGGWKQO/view?usp=sharing">
             Satzung
           </Link>
           <Link onClick={() => nav(`/${RoutePath.Club}/join`)}>Aufnahme</Link>
