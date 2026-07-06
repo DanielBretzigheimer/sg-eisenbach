@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import { Box, Grid, Link, Stack, Typography } from "@mui/material"
+import { Box, Grid, Link, Typography } from "@mui/material"
 import { CaptionImage } from "../../controls/CaptionImage"
 import { RoutePath } from "../../RoutePath"
-import { HomeAlert } from "./HomeAlert"
 
 export function Home() {
   const navigate = useNavigate()
@@ -10,25 +9,7 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
-        <Stack gap={1}>
-          <HomeAlert
-            title="Sommerbiathlon"
-            content="Am 28. Juni 2026 findet unser Sommerbiathlon statt. Wir freuen uns auf zahlreiche Teilnehmer und Zuschauer!"
-            action={{
-              text: "Zur Ausschreibung",
-              target:
-                "https://drive.google.com/file/d/1CReytVE04f0ZOnsM-uoGUi8ASU4On4ri/view?usp=sharing",
-            }}
-          />
-        </Stack>
         <Grid container spacing={2} mt={1}>
-          <Grid item xs={12} md={6}>
-            <CaptionImage
-              id="summer-biathlon"
-              src="https://github.com/user-attachments/assets/8f3972aa-0410-4bec-af4a-e378f6f53ec7"
-              label="17. Sommerbiathlon"
-            />
-          </Grid>
           <Grid item xs={12} md={6} xl={6}>
             <Typography gutterBottom>
               <Typography variant="subtitle1">
