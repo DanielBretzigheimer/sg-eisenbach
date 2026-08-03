@@ -106,6 +106,11 @@ export function Events() {
         </CardContent>
         <List>
           <ListItemButton
+            onClick={() => navigate(`/${RoutePath.Events}/2026/city-festival`)}
+          >
+            <ListItemText primary="Stadtfest 2026" />
+          </ListItemButton>
+          <ListItemButton
             onClick={() => navigate(`/${RoutePath.Events}/2025/royal-shooting`)}
           >
             <ListItemText primary="Königsfeier 2025" />
