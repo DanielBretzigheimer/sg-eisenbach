@@ -37,6 +37,7 @@ import { GeneralMeeting2024 } from "./pages/events/2024/GeneralMeeting2024"
 import { RoyalShooting2024 } from "./pages/events/2024/RoyalShooting2024"
 import { RoyalShooting2025 } from "./pages/events/2025/RoyalShooting2025"
 import { CityFestival2026 } from "./pages/events/2026/CityFestival2026"
+import { SummerHolidayProgram2026 } from "./pages/events/2026/SummerHolidayProgram2026"
 import { NineMMOne } from "./pages/teams/9mm/NineMMOne"
 import { NineMMTwo } from "./pages/teams/9mm/NineMMTwo"
 
@@ -92,6 +93,10 @@ export function AppRoutes() {
       <Route
         path={`/${RoutePath.Events}/2026/city-festival`}
         element={<CityFestival2026 />}
+      />
+      <Route
+        path={`/${RoutePath.Events}/2026/summer-holiday-program`}
+        element={<SummerHolidayProgram2026 />}
       />
       <Route path={`/${RoutePath.Teams}`} element={<Teams />} />
       <Route

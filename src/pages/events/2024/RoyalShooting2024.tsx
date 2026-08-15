@@ -1,5 +1,4 @@
 import { Grid, Stack, Typography } from "@mui/material"
-import { CaptionImage } from "../../../controls/CaptionImage"
 import { Royality } from "../../club/Royality"
 
 export function RoyalShooting2024() {

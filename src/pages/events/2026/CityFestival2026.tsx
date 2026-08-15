@@ -1,11 +1,11 @@
-import { Box, Stack, Typography } from "@mui/material"
+import { Stack, Typography } from "@mui/material"
 import { CaptionImage } from "../../../controls/CaptionImage"
 import { ImageCarousel } from "../../../controls/ImageCarousel"
 
 export function CityFestival2026() {
   return (
     <Stack gap={1.5}>
-      <CaptionImage 
+      <CaptionImage
         src="images/pages/events/2026/city-festival/city-festival-cover-image.jpeg"
         title="Schützenvereine Eisenbach und Obernburg gemeinsam auf dem Altstadtfest"
       />

@@ -1,4 +1,4 @@
-import { createTheme, Theme, ThemeProvider } from "@mui/material"
+import { createTheme, ThemeProvider } from "@mui/material"
 import { blue, pink } from "@mui/material/colors"
 import CssBaseline from "@mui/material/CssBaseline"
 import useMediaQuery from "@mui/material/useMediaQuery"

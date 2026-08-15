@@ -5,11 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",
+      "type": "editor-browser",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
+      "name": "Internal",
       "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${workspaceFolder}/src/*"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
       "preLaunchTask": "Start Dev Server",
       "postDebugTask": "Stop Dev Server"
     }

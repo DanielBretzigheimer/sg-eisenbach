@@ -8,7 +8,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material"
-import { RoutePath } from "../RoutePath"
 import { NavigationTarget, navigationTargets } from "./navigation-target"
 
 type NavigationDrawerProps = {
