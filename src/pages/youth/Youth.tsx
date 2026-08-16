@@ -16,40 +16,7 @@ type Event = {
 }
 
 export function Youth() {
-  const events: Event[] = [
-    {
-      title: "Wanderung zum Dönerjosef",
-      date: "24.01.2026",
-    },
-    {
-      title: "Jahreshauptversammlung",
-      date: "07.02.2026",
-    },
-    {
-      title: "JVS* in Sulzbach",
-      date: "15.04.2026",
-    },
-    {
-      title: "Bezirksmeisterschaft Jugend",
-      date: "18.04.2026",
-    },
-    {
-      title: "JVS* in Eisenbach",
-      date: "22.04.2026",
-    },
-    {
-      title: "JVS*",
-      date: "29.04.2026",
-    },
-    {
-      title: "Finale JVS* in Miltenberg",
-      date: "20.05.2026",
-    },
-    {
-      title: "100-Jahrfeier Schützenverein Oberwinden",
-      date: "10.07.2026 - 12.07.2026",
-    },
-  ]
+  const events: Event[] = []
 
   return (
     <>
@@ -77,25 +44,33 @@ export function Youth() {
         <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
-              <Typography variant="h5">Jugend Ausflüge und Termine</Typography>
+              <Typography variant="h5" gutterBottom>
+                Jugend Ausflüge und Termine
+              </Typography>
+              {events.length === 0 ? (
+                <Typography color="text.secondary">
+                  Aktuell sind keine weiteren Termine für dieses Jahr geplant.
+                </Typography>
+              ) : (
+                <Table>
+                  <TableBody>
+                    {events.map((e) => (
+                      <TableRow key={e.title}>
+                        <TableCell>{e.date}</TableCell>
+                        <TableCell>{e.title}</TableCell>
+                      </TableRow>
+                    ))}
+                    <TableRow>
+                      <TableCell colSpan={2}>
+                        <Typography variant="caption">
+                          * = Jugend Vergleich Schießen
+                        </Typography>
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              )}
             </CardContent>
-            <Table>
-              <TableBody>
-                {events.map((e) => (
-                  <TableRow key={e.title}>
-                    <TableCell>{e.date}</TableCell>
-                    <TableCell>{e.title}</TableCell>
-                  </TableRow>
-                ))}
-                <TableRow>
-                  <TableCell colSpan={2}>
-                    <Typography variant="caption">
-                      * = Jugend Vergleich Schießen
-                    </Typography>
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
           </Card>
         </Grid>
         <Grid item xs={6} md={3}>

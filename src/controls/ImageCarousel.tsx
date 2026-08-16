@@ -5,8 +5,13 @@ import PauseIcon from "@mui/icons-material/Pause"
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 
+type CarouselImage = {
+  src: string
+  caption?: string
+}
+
 type ImageCarouselProps = {
-  images: string[]
+  images: (string | CarouselImage)[]
   title?: string
 }
 
@@ -15,6 +20,16 @@ export function ImageCarousel(props: ImageCarouselProps) {
   const [isAutoPlay, setIsAutoPlay] = useState(true)
   const [showControls, setShowControls] = useState(false)
   const [hoverPaused, setHoverPaused] = useState(false)
+
+  const getCurrentImage = () => {
+    const img = props.images[currentIndex]
+    if (typeof img === "string") {
+      return { src: img, caption: undefined }
+    }
+    return img
+  }
+
+  const currentImage = getCurrentImage()
 
   useEffect(() => {
     if (!isAutoPlay || hoverPaused) return
@@ -60,7 +75,7 @@ export function ImageCarousel(props: ImageCarouselProps) {
       }}
     >
       <img
-        src={props.images[currentIndex]}
+        src={currentImage.src}
         style={{
           height: "100%",
           width: "auto",
@@ -68,10 +83,8 @@ export function ImageCarousel(props: ImageCarouselProps) {
           display: "block",
           objectFit: "contain",
         }}
-        alt={`Carousel image ${currentIndex + 1}`}
+        alt={currentImage.caption || `Carousel image ${currentIndex + 1}`}
       />
-
-      {/* Left Button */}
       <IconButton
         onClick={handlePrevious}
         sx={{
@@ -110,9 +123,7 @@ export function ImageCarousel(props: ImageCarouselProps) {
       >
         <ChevronRightIcon />
       </IconButton>
-
-      {/* Title at bottom with fade effect */}
-      {props.title && (
+      {(props.title || currentImage.caption) && (
         <Box
           sx={{
             position: "absolute",
@@ -127,11 +138,9 @@ export function ImageCarousel(props: ImageCarouselProps) {
             fontWeight: 500,
           }}
         >
-          {props.title}
+          {currentImage.caption || props.title}
         </Box>
       )}
-
-      {/* Play/Pause Button - Always visible */}
       <IconButton
         onClick={() => setIsAutoPlay(!isAutoPlay)}
         sx={{
@@ -150,8 +159,6 @@ export function ImageCarousel(props: ImageCarouselProps) {
       >
         {isAutoPlay ? <PauseIcon /> : <PlayArrowIcon />}
       </IconButton>
-
-      {/* Dot indicators */}
       <Box
         sx={{
           position: "absolute",
