@@ -9,6 +9,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material"
+import { Link } from "react-router-dom"
 import { RoutePath } from "../../RoutePath"
 import { PastEvents } from "./PastEvents"
 
@@ -16,10 +17,17 @@ type Event = {
   title: string
   date: string
   time: string
+  route?: string
 }
 
 export function Events() {
   const events: Event[] = [
+    {
+      title: "Preisschießen",
+      date: "27.10. - 24.11.2026",
+      time: "Di, Fr, So",
+      route: `/${RoutePath.Events}/2026/royal-shooting`,
+    },
     {
       title: "Gaukönigsball",
       date: "07.11.2026",
@@ -29,6 +37,7 @@ export function Events() {
       title: "Königsschießen",
       date: "21.11.2026",
       time: "14:00 Uhr",
+      route: `/${RoutePath.Events}/2026/royal-shooting`,
     },
     {
       title: "Königsfeier",
@@ -54,7 +63,25 @@ export function Events() {
           <TableBody>
             {events.map((e) => (
               <TableRow key={e.title}>
-                <TableCell>{e.title}</TableCell>
+                <TableCell>
+                  {e.route ? (
+                    <Link to={e.route} style={{ textDecoration: "none", color: "inherit" }}>
+                      <Typography
+                        sx={{
+                          color: "primary.main",
+                          cursor: "pointer",
+                          "&:hover": {
+                            textDecoration: "underline",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </Link>
+                  ) : (
+                    e.title
+                  )}
+                </TableCell>
                 <TableCell>{e.date}</TableCell>
                 <TableCell>{e.time}</TableCell>
               </TableRow>

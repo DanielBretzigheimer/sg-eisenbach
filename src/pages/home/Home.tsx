@@ -4,6 +4,7 @@ import { CaptionImage } from "../../controls/CaptionImage"
 import { ImageCarousel } from "../../controls/ImageCarousel"
 import { RoutePath } from "../../RoutePath"
 import { RecentEvents } from "./RecentEvents"
+import { HomeAlert } from "./HomeAlert"
 
 export function Home() {
   const navigate = useNavigate()
@@ -11,13 +12,28 @@ export function Home() {
   return (
     <>
       <Box mt={2}>
+        <HomeAlert
+          title="Beitragserhöhung ab 2027"
+          content="An der letzten Jahreshauptversammlung wurde einstimmig beschlossen, den Mitgliedsbeitrag zu erhöhen. Der Mitgliedsbeitrag erhöht sich ab 2027 auf 50 €. Die Jugend ist von der Erhöhung ausgenommen."
+          action={{
+            text: "Mehr erfahren",
+            target: `/${RoutePath.Club}/membership-fee-increase`,
+          }}
+        />
+      </Box>
+
+      <Box mt={2}>
         <Grid container spacing={3} mt={1} mb={4}>
           <Grid item xs={12} md={6}>
+            <Typography
+              variant="h5"
+              sx={{ fontWeight: "bold", mb: 2 }}
+              gutterBottom
+            >
+              Herzlich Willkommen bei der Schützengesellschaft Eisenbach 1958
+              e.V.!
+            </Typography>
             <Typography gutterBottom>
-              <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
-                Herzlich Willkommen bei der Schützengesellschaft Eisenbach 1958
-                e.V.!
-              </Typography>
               Wir freuen uns, dass Sie den Weg zu uns gefunden haben und laden
               Sie herzlich ein, sich über unseren Verein und unser vielfältiges
               Angebot zu informieren. Bei uns finden Sie nicht nur ein

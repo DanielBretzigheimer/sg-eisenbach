@@ -37,9 +37,11 @@ import { GeneralMeeting2024 } from "./pages/events/2024/GeneralMeeting2024"
 import { RoyalShooting2024 } from "./pages/events/2024/RoyalShooting2024"
 import { RoyalShooting2025 } from "./pages/events/2025/RoyalShooting2025"
 import { CityFestival2026 } from "./pages/events/2026/CityFestival2026"
+import { RoyalShooting2026 } from "./pages/events/2026/RoyalShooting2026"
 import { SummerHolidayProgram2026 } from "./pages/events/2026/SummerHolidayProgram2026"
 import { NineMMOne } from "./pages/teams/9mm/NineMMOne"
 import { NineMMTwo } from "./pages/teams/9mm/NineMMTwo"
+import { MembershipFeeIncrease } from "./pages/club/MembershipFeeIncrease"
 
 export function AppRoutes() {
   return (
@@ -93,6 +95,10 @@ export function AppRoutes() {
       <Route
         path={`/${RoutePath.Events}/2026/city-festival`}
         element={<CityFestival2026 />}
+      />
+      <Route
+        path={`/${RoutePath.Events}/2026/royal-shooting`}
+        element={<RoyalShooting2026 />}
       />
       <Route
         path={`/${RoutePath.Events}/2026/summer-holiday-program`}
@@ -161,6 +167,10 @@ export function AppRoutes() {
         element={<ShootingRangeBow />}
       />
       <Route path={`/${RoutePath.Club}`} element={<Club />} />
+      <Route
+        path={`/${RoutePath.Club}/membership-fee-increase`}
+        element={<MembershipFeeIncrease />}
+      />
       <Route path={`/${RoutePath.Club}/join`} element={<Join />} />
       <Route path={`/${RoutePath.Club}/timeline`} element={<Timeline />} />
       <Route
